@@ -26,8 +26,8 @@ const CONFIG = {
     // Número de WhatsApp con código de país, SIN "+" ni espacios. Ej: '5215512345678'
     // Mientras esté vacío, los botones abren WhatsApp con el mensaje listo y
     // la persona elige el contacto.
-    whatsapp: '',
-    phoneLabel: '',   // Cómo se muestra el teléfono. Ej: '+52 55 1234 5678'
+    whatsapp: '5215548099981',
+    phoneLabel: '+52 55 4809 9981',   // Cómo se muestra el teléfono. Ej: '+52 55 1234 5678'
     hours: '',        // Ej: 'Lunes a domingo, 1:00 pm a 9:00 pm'
     address: '',      // Ej: 'Calle Hidalgo 123, Centro'
     mapsUrl: '',      // Enlace de Google Maps (opcional, vuelve clicable la dirección)

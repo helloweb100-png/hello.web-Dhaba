@@ -1079,6 +1079,7 @@ html.is-ready .hero .thali { opacity: 1; transform: none; }
 
 .menu-empty { display: grid; justify-items: center; gap: .6rem; padding: 3rem 1rem; text-align: center; color: var(--text-2); border: 1px dashed var(--line-2); border-radius: var(--r-lg); }
 .menu-empty-title { font: 800 1.4rem var(--font-display); color: var(--text); }
+.menu-foot-link { color: var(--gold-text); text-decoration: underline; text-underline-offset: 3px; }
 #menu-body { scroll-margin-top: calc(var(--header-h) + 170px); }
 .menu-foot { margin-top: 2.4rem; font-size: .85rem; color: var(--text-3); }
 
