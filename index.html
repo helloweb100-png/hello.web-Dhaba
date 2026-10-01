@@ -1,0 +1,2441 @@
+<!DOCTYPE html>
+<html lang="es-MX" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!-- ============ SEO BASICO ============ -->
+    <title>Dhaba | Comida India y Pakistaní Halal | Menú y pedidos por WhatsApp</title>
+    <meta name="description" content="Comida india y pakistaní 100% halal: curry, biryani, nihari, naan y lassi. Mira el menú con precios y haz tu pedido por WhatsApp.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Dhaba">
+    <meta name="theme-color" content="#06130c">
+    <meta name="color-scheme" content="dark light">
+    <!-- AL PUBLICAR: descomenta y pon tu dominio real
+    <link rel="canonical" href="https://TU-DOMINIO.com/">
+    <meta property="og:url" content="https://TU-DOMINIO.com/">
+    -->
+
+    <!-- ============ OPEN GRAPH / TWITTER ============ -->
+    <meta property="og:type" content="restaurant.restaurant">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dhaba">
+    <meta property="og:title" content="Dhaba | Comida India y Pakistaní Halal">
+    <meta property="og:description" content="Curry, biryani, nihari, naan y lassi, todo 100% halal. Arma tu pedido en la página y envíalo por WhatsApp.">
+    <meta property="og:image" content="img/og-dhaba.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logotipo de Dhaba, comida india y pakistaní halal">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dhaba | Comida India y Pakistaní Halal">
+    <meta name="twitter:description" content="Curry, biryani, nihari, naan y lassi, todo 100% halal. Pide por WhatsApp.">
+    <meta name="twitter:image" content="img/og-dhaba.jpg">
+
+    <!-- ============ ICONOS ============ -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23081c12'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-style='italic' font-weight='700' font-size='40' text-anchor='middle' fill='%23e8b949'%3ED%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Aplica el tema y marca JS antes del primer pintado (evita parpadeos) -->
+    <script>
+        (function () {
+            var d = document.documentElement;
+            d.classList.add('js');
+            try {
+                var t = localStorage.getItem('dhaba:theme');
+                if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+            } catch (e) {}
+            if (d.getAttribute('data-theme') === 'light') {
+                var m = document.querySelector('meta[name="theme-color"]');
+                if (m) m.setAttribute('content', '#f6f0e0');
+            }
+        })();
+    </script>
+
+    <!-- ============ TIPOGRAFIA ============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="image" href="img/logo.webp" type="image/webp">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ============ DATOS ESTRUCTURADOS ============
+         AL PUBLICAR agrega en "Restaurant": url, image (URL absoluta), telephone, address y openingHours. -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Dhaba",
+        "alternateName": "Dhaba Comida India y Pakistaní Halal",
+        "description": "Restaurante de comida india y pakistaní 100% halal. Curry, biryani, nihari, naan, lassi y más, con pedidos por WhatsApp.",
+        "servesCuisine": ["India", "Pakistaní", "Halal"],
+        "priceRange": "$$",
+        "acceptsReservations": false
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Toda la comida es halal?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. Todo el menú de Dhaba es 100% halal y contamos con certificación halal."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo hago mi pedido?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Arma tu pedido en esta página con el botón + de cada platillo y envíalo por WhatsApp. También puedes escribirnos directamente y te ayudamos."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Tienen opciones vegetarianas?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. Hay una categoría completa: Palak Paneer, Paneer Tikka Masala, Channa Curry, Rajma Curry, Mix Daal Curry, Mix Veg Biryani y más."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué pido si es mi primera vez?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Empieza con un Tikka Masala, acompáñalo con un Garlic Naan y cierra con un Lassi de mango. Si tienes dudas, pregúntanos por WhatsApp."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué es un thali?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es un plato completo con varios guisados. Nuestro Indian Thali incluye 4 guisados, entre ellos channa curry y mix veg curry."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Los panes cuestan desde $20, las bebidas desde $30 y los platillos fuertes desde $150. Todos los precios están en el menú y se confirman al ordenar."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Puedo pedir para varias personas?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. Agrega todo a tu pedido o escríbenos por WhatsApp con lo que necesitas y te ayudamos a armarlo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Dónde los encuentro y cuál es el horario?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Escríbenos por WhatsApp y te compartimos la ubicación y el horario actualizados."
+                }
+            }
+        ]
+    }
+    </script>
+    <noscript>
+        <style>#loader{display:none!important}</style>
+    </noscript>
+</head>
+
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- ============================================================
+         SPRITE DE ICONOS (un solo trazo: 1.75, rejilla 24)
+         ============================================================ -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <defs>
+            <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+            <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></symbol>
+            <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+            <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+            <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+            <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+            <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+            <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></g></symbol>
+            <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 8.5h13l-1 11.5h-11z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/></g></symbol>
+            <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/></g></symbol>
+            <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+            <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h11" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></symbol>
+            <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.2a7 7 0 0 1 14 0C19 14.800 12 21 12 21Z"/><circle cx="12" cy="9.800" r="2.400"/></g></symbol>
+            <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.500"/><path d="M12 7.500V12l3 2"/></g></symbol>
+            <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8.500 5-14 15-14 0 10-5.500 15-14 15"/><path d="M5 19 13 11"/></g></symbol>
+            <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.200 6.300L21 12l-6.800 2.700L12 21l-2.200-6.300L3 12l6.800-2.700Z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></symbol>
+            <symbol id="i-trash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4.500h6V7M6.500 7l1 13h9l1-13"/></g></symbol>
+            <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 10.500 13.500M21 3l-6.500 18-4-7.500L3 9.500Z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+            <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+            <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
+            <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></symbol>
+            <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
+        </defs>
+    </svg>
+
+    <!-- ============================================================
+         PRELOADER (spinner de marca + puertas que se abren)
+         ============================================================ -->
+    <div id="loader" role="status">
+        <span class="sr-only">Cargando Dhaba</span>
+        <div class="loader-door loader-door--l" aria-hidden="true"></div>
+        <div class="loader-door loader-door--r" aria-hidden="true"></div>
+        <div class="loader-stage" aria-hidden="true">
+            <div class="loader-emblem">
+                <svg class="loader-ring" viewBox="0 0 200 200" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="lg-gold" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#f7dc8d"/>
+                            <stop offset=".55" stop-color="#e8b949"/>
+                            <stop offset="1" stop-color="#b98a1f"/>
+                        </linearGradient>
+                    </defs>
+                    <circle class="lr-track" cx="100" cy="100" r="92"/>
+                    <circle class="lr-dash" cx="100" cy="100" r="98"/>
+                    <circle class="lr-arc" id="loader-arc" cx="100" cy="100" r="92" pathLength="100"/>
+                </svg>
+                <span class="loader-orbit" aria-hidden="true"><i></i></span>
+                <span class="loader-orbit loader-orbit--b" aria-hidden="true"><i></i></span>
+                <div class="loader-logo">
+                    <img src="img/logo-sm.webp" width="247" height="256" alt="Dhaba">
+                    <img class="shine" src="img/logo-sm.webp" width="247" height="256" alt="" aria-hidden="true">
+                </div>
+            </div>
+            <p class="loader-pct"><span id="loader-pct">0</span><small>%</small></p>
+            <p class="loader-caption" id="loader-caption">Moliendo las especias</p>
+        </div>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         HEADER (pildora de cristal, una sola linea)
+         ============================================================ -->
+    <header class="site-header" id="site-header">
+        <div class="header-bar">
+            <a class="brand" href="#inicio" aria-label="Dhaba, ir al inicio">
+                <img src="img/logo-sm.webp" width="247" height="256" alt="">
+                <span class="brand-word">Dhaba</span>
+            </a>
+
+            <nav class="nav-desktop" aria-label="Principal">
+                <a href="#especialidades">Especialidades</a>
+                <a href="#menu">Menú</a>
+                <a href="#bebidas">Bebidas</a>
+                <a href="#como-pedir">Cómo pedir</a>
+                <a href="#guia">Guía</a>
+                <a href="#faq">Preguntas</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn theme-toggle" type="button" id="theme-toggle" aria-label="Cambiar a tema claro">
+                    <svg class="i i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+                    <svg class="i i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+                </button>
+                <button class="icon-btn cart-btn" type="button" data-open-cart aria-label="Ver tu pedido">
+                    <svg class="i" aria-hidden="true"><use href="#i-bag"/></svg>
+                    <span class="cart-badge" data-cart-count hidden>0</span>
+                </button>
+                <a class="btn btn-gold btn-sm nav-cta" data-wa href="https://wa.me/?text=Hola%20Dhaba%2C%20quiero%20hacer%20un%20pedido">
+                    <svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                    Pedir por WhatsApp
+                </a>
+                <button class="icon-btn burger" type="button" id="burger" aria-label="Abrir menú" aria-haspopup="dialog">
+                    <svg class="i" aria-hidden="true"><use href="#i-menu"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenido">
+
+        <!-- ============================================================
+             HERO
+             ============================================================ -->
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-bg" aria-hidden="true">
+                <span class="aurora aurora--1"></span>
+                <span class="aurora aurora--2"></span>
+                <span class="aurora aurora--3"></span>
+                <div class="lattice lattice--hero"></div>
+                <canvas id="embers"></canvas>
+                <div class="hero-spot"></div>
+            </div>
+
+            <div class="container hero-grid">
+                <div class="hero-copy" id="hero-copy">
+                    <p class="hero-eyebrow" data-hero-in style="--d:0">
+                        <img src="img/sello-halal.png" width="300" height="300" alt="" loading="eager">
+                        <span>Certificado 100% halal</span>
+                    </p>
+                    <h1 class="hero-title" id="hero-title" data-split data-split-hero>
+                        El sabor de la <em>India y Pakistán</em>.
+                    </h1>
+                    <p class="hero-sub" data-hero-in style="--d:1">
+                        Curry, biryani, nihari y naan para pedir por WhatsApp. Arma tu pedido en segundos.
+                    </p>
+                    <div class="hero-cta" data-hero-in style="--d:2">
+                        <a class="btn btn-gold btn-lg magnetic" href="#menu">
+                            Ver el menú
+                            <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+                        </a>
+                        <a class="btn btn-glass btn-lg magnetic" data-wa href="https://wa.me/?text=Hola%20Dhaba%2C%20quiero%20hacer%20un%20pedido">
+                            <svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                            Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" id="hero-visual">
+                    <div class="thali">
+                        <div class="thali-halo"></div>
+                        <svg class="thali-mandala" id="mandala" viewBox="-300 -300 600 600" aria-hidden="true"></svg>
+                        <div class="thali-ring thali-ring--a"></div>
+                        <div class="thali-ring thali-ring--b"></div>
+
+                        <div class="orbit" aria-hidden="true">
+                            <div class="bowl" style="--a:0deg"><div class="bowl-in"><img src="img/paneer-tikka-masala.jpg" width="452" height="636" alt="" loading="eager" decoding="async"></div></div>
+                            <div class="bowl" style="--a:60deg"><div class="bowl-in"><img src="img/garlic-naan.jpg" width="799" height="1200" alt="" loading="eager" decoding="async"></div></div>
+                            <div class="bowl" style="--a:120deg"><div class="bowl-in"><img src="img/channa-chaat.jpg" width="1200" height="1200" alt="" loading="eager" decoding="async"></div></div>
+                            <div class="bowl" style="--a:180deg"><div class="bowl-in"><img src="img/lassi-mango.jpg" width="960" height="1200" alt="" loading="eager" decoding="async"></div></div>
+                            <div class="bowl" style="--a:240deg"><div class="bowl-in"><img src="img/piaz-pakora.jpg" width="683" height="1024" alt="" loading="eager" decoding="async"></div></div>
+                            <div class="bowl" style="--a:300deg"><div class="bowl-in"><img src="img/masala-chai.jpg" width="720" height="780" alt="" loading="eager" decoding="async"></div></div>
+                        </div>
+
+                        <div class="crest" id="crest">
+                            <div class="crest-float">
+                                <img src="img/logo.webp" width="964" height="1000" alt="Logotipo de Dhaba: comida india y pakistaní halal" fetchpriority="high" decoding="async">
+                                <img class="shine" src="img/logo.webp" width="964" height="1000" alt="" aria-hidden="true" decoding="async">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             MARQUEE (la unica cinta de la pagina)
+             ============================================================ -->
+        <div class="marquee" aria-label="Algunos platillos del menú">
+            <div class="marquee-track">
+                <ul><li>Biryani<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Nihari<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li>Tikka Masala<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Garlic Naan<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li>Lassi de mango<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Aloo Samosa<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li>Palak Paneer<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Keema<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li>Masala Chai<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Chicken Kabab<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li>Indian Thali<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Gajar Ka Halwa<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li></ul>
+<ul aria-hidden="true"><li>Biryani<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Nihari<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li>Tikka Masala<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Garlic Naan<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li>Lassi de mango<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Aloo Samosa<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li>Palak Paneer<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Keema<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li>Masala Chai<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Chicken Kabab<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li>Indian Thali<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li><li class="is-outline">Gajar Ka Halwa<svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></li></ul>
+            </div>
+        </div>
+
+        <!-- ============================================================
+             MANIFIESTO (el texto se ilumina al hacer scroll)
+             ============================================================ -->
+        <section class="manifesto section" id="dhaba" aria-labelledby="manifesto-title">
+            <div class="container">
+                <h2 class="manifesto-lead" id="manifesto-title" data-reveal>¿Qué es un dhaba?</h2>
+                <p class="manifesto-text" id="manifesto-text">
+                    Un dhaba es el restaurante de carretera de la India y Pakistán. Platos abundantes, <em>especias intensas</em> y pan caliente para compartir. Esa es la mesa que armamos aquí.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             CERTIFICACION + NUMEROS
+             ============================================================ -->
+        <section class="trust section" id="halal" aria-labelledby="trust-title">
+            <div class="lattice lattice--soft" aria-hidden="true"></div>
+            <div class="container trust-grid">
+                <div class="trust-seal" data-reveal="scale">
+                    <div class="seal-stage">
+                        <svg class="seal-text" viewBox="0 0 300 300" aria-hidden="true">
+                            <defs><path id="seal-path" d="M150,150 m-128,0 a128,128 0 1,1 256,0 a128,128 0 1,1 -256,0"/></defs>
+                            <text><textPath href="#seal-path" startOffset="0" textLength="796" lengthAdjust="spacing">CERTIFICADO HALAL • 100% HALAL • CERTIFICADO HALAL • 100% HALAL •</textPath></text>
+                        </svg>
+                        <img src="img/sello-halal.png" width="300" height="300" alt="Sello Food Certified Halal: 100% halal" loading="lazy" decoding="async">
+                    </div>
+                </div>
+
+                <div class="trust-copy">
+                    <p class="eyebrow" data-reveal>Certificación</p>
+                    <h2 id="trust-title" data-split>Cocina halal certificada.</h2>
+                    <p class="lead" data-reveal style="--i:1">Cada platillo del menú es 100% halal, con el sello que respalda nuestra cocina.</p>
+
+                    <dl class="stats">
+                        <div class="stat" data-reveal style="--i:2">
+                            <dt>platillos y bebidas en el menú</dt>
+                            <dd><span data-count="67">67</span></dd>
+                        </div>
+                        <div class="stat" data-reveal style="--i:3">
+                            <dt>de la carta es halal</dt>
+                            <dd><span data-count="100">100</span><b>%</b></dd>
+                        </div>
+                        <div class="stat" data-reveal style="--i:4">
+                            <dt>por un naan o un chapati</dt>
+                            <dd><b>$</b><span data-count="20">20</span></dd>
+                        </div>
+                        <div class="stat" data-reveal style="--i:5">
+                            <dt>bebidas: lassi, chai, kahwa y más</dt>
+                            <dd><span data-count="8">8</span></dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             ESPECIALIDADES (tarjetas que se apilan al hacer scroll)
+             ============================================================ -->
+        <section class="stack-section section" id="especialidades" aria-labelledby="stack-title">
+            <div class="container">
+                <header class="section-head">
+                    <h2 id="stack-title" data-split>Elige por dónde empezar.</h2>
+                    <p class="lead" data-reveal style="--i:1">Cuatro formas de abrir la mesa. Toca cualquiera para verla en el menú.</p>
+                </header>
+            </div>
+
+            <div class="container">
+                <div class="stack" id="stack">
+                    <article class="stack-card" style="--i:0">
+                        <div class="stack-shade" aria-hidden="true"></div>
+                        <div class="stack-copy">
+                            <h3>Curry y masala</h3>
+                            <p>Salsas de especias para mojar pan y acompañar arroz. Elígelas con pollo, res, mutton, pescado o verduras.</p>
+                            <p class="from">Desde <strong>$180</strong></p>
+                            <a class="btn btn-gold" href="#menu" data-search="curry">
+                                Ver los curry
+                                <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+                            </a>
+                        </div>
+                        <figure class="arch stack-photo">
+                            <img src="img/paneer-tikka-masala.jpg" width="452" height="636" alt="Paneer Tikka Masala con cilantro fresco" loading="lazy" decoding="async">
+                        </figure>
+                    </article>
+
+                    <article class="stack-card" style="--i:1">
+                        <div class="stack-shade" aria-hidden="true"></div>
+                        <div class="stack-copy">
+                            <h3>Naan y panes</h3>
+                            <p>Naan, butter naan, garlic naan, chapati y aloo paratha. El acompañante de cada mesa.</p>
+                            <p class="from">Desde <strong>$20</strong></p>
+                            <a class="btn btn-gold" href="#menu" data-filter="panes">
+                                Ver los panes
+                                <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+                            </a>
+                        </div>
+                        <figure class="arch stack-photo">
+                            <img src="img/garlic-naan.jpg" width="799" height="1200" alt="Garlic Naan dorado con ajo y cilantro" loading="lazy" decoding="async">
+                        </figure>
+                    </article>
+
+                    <article class="stack-card" style="--i:2">
+                        <div class="stack-shade" aria-hidden="true"></div>
+                        <div class="stack-copy">
+                            <h3>Antojitos crujientes</h3>
+                            <p>Aloo samosa, pakora, namak para y channa chaat para abrir el apetito.</p>
+                            <p class="from">Desde <strong>$50</strong></p>
+                            <a class="btn btn-gold" href="#menu" data-filter="entradas">
+                                Ver las entradas
+                                <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+                            </a>
+                        </div>
+                        <figure class="arch stack-photo">
+                            <img src="img/piaz-pakora.jpg" width="683" height="1024" alt="Aloo Piaz Pakora: frituras doradas con salsa" loading="lazy" decoding="async">
+                        </figure>
+                    </article>
+
+                    <article class="stack-card" style="--i:3">
+                        <div class="stack-shade" aria-hidden="true"></div>
+                        <div class="stack-copy">
+                            <h3>Lassi y chai</h3>
+                            <p>Lassi de mango, fresa o natural, masala chai, kahwa y rooh afza para cerrar la comida.</p>
+                            <p class="from">Desde <strong>$30</strong></p>
+                            <a class="btn btn-gold" href="#bebidas">
+                                Ver las bebidas
+                                <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+                            </a>
+                        </div>
+                        <figure class="arch stack-photo">
+                            <img src="img/lassi-mango.jpg" width="960" height="1200" alt="Lassi de mango con menta" loading="lazy" decoding="async">
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             BENTO: ELIGE TU PROTEINA
+             ============================================================ -->
+        <section class="bento-section section" id="proteinas" aria-labelledby="bento-title">
+            <div class="container">
+                <header class="section-head">
+                    <h2 id="bento-title" data-split>¿Qué se te antoja hoy?</h2>
+                    <p class="lead" data-reveal style="--i:1">Elige tu proteína y mira todos los platillos de cada categoría.</p>
+                </header>
+
+                <div class="bento">
+                    <a class="tile tile--veg spot-card" href="#menu" data-filter="vegetariano" data-reveal style="--i:0">
+                        <img class="tile-img" src="img/rajma-curry.jpg" width="554" height="554" alt="Rajma Curry: frijoles rojos en salsa especiada" loading="lazy" decoding="async">
+                        <div class="tile-body">
+                            <h3>Vegetariano</h3>
+                            <p>Paneer, espinaca, garbanzo, frijol rojo y lentejas.</p>
+                            <p class="tile-meta"><span>12 platillos</span><strong>Desde $180</strong></p>
+                        </div>
+                        <span class="tile-go" aria-hidden="true"><svg class="i"><use href="#i-arrow-ur"/></svg></span>
+                    </a>
+
+                    <a class="tile tile--pollo spot-card" href="#menu" data-filter="pollo" data-reveal style="--i:1">
+                        <div class="tile-body">
+                            <h3>Pollo</h3>
+                            <p>Tikka masala, nihari, kabab, biryani y shawarma.</p>
+                            <p class="tile-meta"><span>12 platillos</span><strong>Desde $150</strong></p>
+                        </div>
+                        <span class="tile-go" aria-hidden="true"><svg class="i"><use href="#i-arrow-ur"/></svg></span>
+                    </a>
+
+                    <a class="tile tile--res spot-card" href="#menu" data-filter="res" data-reveal style="--i:2">
+                        <div class="tile-body">
+                            <h3>Res</h3>
+                            <p>Curry, nihari, keema, biryani y tacos.</p>
+                            <p class="tile-meta"><span>10 platillos</span><strong>Desde $180</strong></p>
+                        </div>
+                        <span class="tile-go" aria-hidden="true"><svg class="i"><use href="#i-arrow-ur"/></svg></span>
+                    </a>
+
+                    <a class="tile tile--mutton spot-card" href="#menu" data-filter="mutton" data-reveal style="--i:3">
+                        <div class="tile-body">
+                            <h3>Mutton</h3>
+                            <p>Curry, nihari, keema y biryani.</p>
+                            <p class="tile-meta"><span>8 platillos</span><strong>Desde $200</strong></p>
+                        </div>
+                        <span class="tile-go" aria-hidden="true"><svg class="i"><use href="#i-arrow-ur"/></svg></span>
+                    </a>
+
+                    <a class="tile tile--pescado spot-card" href="#menu" data-filter="pescado" data-reveal style="--i:4">
+                        <div class="tile-body">
+                            <h3>Pescado</h3>
+                            <p>Fish curry y fish fried.</p>
+                            <p class="tile-meta"><span>2 platillos</span><strong>Desde $200</strong></p>
+                        </div>
+                        <span class="tile-go" aria-hidden="true"><svg class="i"><use href="#i-arrow-ur"/></svg></span>
+                    </a>
+
+                    <div class="tile tile--thali" data-reveal style="--i:5">
+                        <div class="thali-plate" aria-hidden="true">
+                            <i></i><i></i><i></i><i></i><b></b>
+                        </div>
+                        <div class="tile-body">
+                            <h3>Indian Thali</h3>
+                            <p>4 guisados en un solo plato: channa curry, mix veg curry y más.</p>
+                            <p class="tile-meta"><strong class="tile-price">$600</strong></p>
+                        </div>
+                        <div class="qty-ctl qty-ctl--wide" data-ctl="indian-thali">
+                            <button class="btn btn-gold add-btn" type="button" data-add="indian-thali">
+                                <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg>
+                                Agregar al pedido
+                            </button>
+                            <div class="stepper" hidden>
+                                <button type="button" data-dec="indian-thali" aria-label="Quitar uno: Indian Thali"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+                                <output aria-live="polite">1</output>
+                                <button type="button" data-inc="indian-thali" aria-label="Agregar uno más: Indian Thali"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             MENU INTERACTIVO
+             ============================================================ -->
+        <section class="menu section" id="menu" aria-labelledby="menu-title">
+            <div class="container">
+                <header class="section-head">
+                    <h2 id="menu-title" data-split>El menú completo.</h2>
+                    <p class="lead" data-reveal style="--i:1">Toca + para armar tu pedido. Lo envías por WhatsApp y lo confirmamos contigo.</p>
+                </header>
+
+                <div class="menu-tools" id="menu-tools">
+                    <div class="search">
+                        <svg class="i" aria-hidden="true"><use href="#i-search"/></svg>
+                        <label class="sr-only" for="menu-search">Buscar platillo</label>
+                        <input id="menu-search" type="search" placeholder="Buscar: biryani, naan, lassi…" autocomplete="off" enterkeyhint="search">
+                        <button class="search-clear" type="button" id="menu-clear" aria-label="Borrar búsqueda" hidden>
+                            <svg class="i" aria-hidden="true"><use href="#i-close"/></svg>
+                        </button>
+                    </div>
+                    <div class="chips" role="group" aria-label="Filtrar por categoría">
+                        <button class="chip is-active" type="button" data-cat="all" aria-pressed="true">Todo <span>67</span></button>
+<button class="chip" type="button" data-cat="entradas" aria-pressed="false">Entradas <span>6</span></button>
+<button class="chip" type="button" data-cat="panes" aria-pressed="false">Panes <span>5</span></button>
+<button class="chip" type="button" data-cat="vegetariano" aria-pressed="false">Vegetariano <span>12</span></button>
+<button class="chip" type="button" data-cat="pollo" aria-pressed="false">Pollo <span>12</span></button>
+<button class="chip" type="button" data-cat="res" aria-pressed="false">Res <span>10</span></button>
+<button class="chip" type="button" data-cat="mutton" aria-pressed="false">Mutton <span>8</span></button>
+<button class="chip" type="button" data-cat="pescado" aria-pressed="false">Pescado <span>2</span></button>
+<button class="chip" type="button" data-cat="extras" aria-pressed="false">Thali y más <span>4</span></button>
+<button class="chip" type="button" data-cat="bebidas" aria-pressed="false">Bebidas <span>8</span></button>
+                    </div>
+                </div>
+
+                <div class="menu-body" id="menu-body" aria-live="polite">
+                    <section class="menu-group" id="cat-entradas" data-cat="entradas" aria-labelledby="mg-entradas">
+<header class="menu-group-head">
+<h3 id="mg-entradas">Entradas y antojitos</h3>
+<p>Crujientes y para compartir</p>
+<span class="menu-group-count" data-group-count>6 platillos</span>
+</header>
+<ul class="dishes">
+<li class="dish spot-card" id="d-aloo-samosa-4-pz" data-id="aloo-samosa-4-pz" data-name="Aloo Samosa (4 pz)" data-price="150" data-cat="entradas" data-hay="aloo samosa (4 pz) empanadillas triangulares crujientes rellenas de papa y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Aloo Samosa (4 pz)</h4>
+<p class="dish-desc">Empanadillas triangulares crujientes rellenas de papa y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="150">$150</data></p>
+<div class="qty-ctl" data-ctl="aloo-samosa-4-pz">
+<button class="add-btn" type="button" data-add="aloo-samosa-4-pz" aria-label="Agregar Aloo Samosa (4 pz) al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="aloo-samosa-4-pz" aria-label="Quitar uno: Aloo Samosa (4 pz)"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="aloo-samosa-4-pz" aria-label="Agregar uno más: Aloo Samosa (4 pz)"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-aloo-piaz-pakora" data-id="aloo-piaz-pakora" data-name="Aloo Piaz Pakora" data-price="150" data-cat="entradas" data-hay="aloo piaz pakora frituras crujientes de papa y cebolla en masa de garbanzo.">
+<div class="dish-media arch-sm"><img src="img/piaz-pakora.jpg" width="683" height="1024" alt="Aloo Piaz Pakora: frituras doradas de papa y cebolla con salsa" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Aloo Piaz Pakora</h4>
+<p class="dish-desc">Frituras crujientes de papa y cebolla en masa de garbanzo.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="150">$150</data></p>
+<div class="qty-ctl" data-ctl="aloo-piaz-pakora">
+<button class="add-btn" type="button" data-add="aloo-piaz-pakora" aria-label="Agregar Aloo Piaz Pakora al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="aloo-piaz-pakora" aria-label="Quitar uno: Aloo Piaz Pakora"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="aloo-piaz-pakora" aria-label="Agregar uno más: Aloo Piaz Pakora"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-chicken-pakora" data-id="chicken-pakora" data-name="Chicken Pakora" data-price="200" data-cat="entradas" data-hay="chicken pakora frituras crujientes de pollo con especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Pakora</h4>
+<p class="dish-desc">Frituras crujientes de pollo con especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="chicken-pakora">
+<button class="add-btn" type="button" data-add="chicken-pakora" aria-label="Agregar Chicken Pakora al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-pakora" aria-label="Quitar uno: Chicken Pakora"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-pakora" aria-label="Agregar uno más: Chicken Pakora"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-channa-chaat" data-id="channa-chaat" data-name="Channa Chaat" data-price="150" data-cat="entradas" data-hay="channa chaat garbanzos con papa, cebolla, tomate y cilantro.">
+<div class="dish-media arch-sm"><img src="img/channa-chaat.jpg" width="1200" height="1200" alt="Channa Chaat: ensalada de garbanzos con papa, cebolla y cilantro" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Channa Chaat</h4>
+<p class="dish-desc">Garbanzos con papa, cebolla, tomate y cilantro.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="150">$150</data></p>
+<div class="qty-ctl" data-ctl="channa-chaat">
+<button class="add-btn" type="button" data-add="channa-chaat" aria-label="Agregar Channa Chaat al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="channa-chaat" aria-label="Quitar uno: Channa Chaat"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="channa-chaat" aria-label="Agregar uno más: Channa Chaat"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-namak-para" data-id="namak-para" data-name="Namak Para" data-price="50" data-cat="entradas" data-hay="namak para botana crujiente y salada, ideal con un te.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Namak Para</h4>
+<p class="dish-desc">Botana crujiente y salada, ideal con un té.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="50">$50</data></p>
+<div class="qty-ctl" data-ctl="namak-para">
+<button class="add-btn" type="button" data-add="namak-para" aria-label="Agregar Namak Para al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="namak-para" aria-label="Quitar uno: Namak Para"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="namak-para" aria-label="Agregar uno más: Namak Para"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-papas-fritas" data-id="papas-fritas" data-name="Papas Fritas" data-price="60" data-cat="entradas" data-hay="papas fritas papas fritas doradas y crujientes.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Papas Fritas</h4>
+<p class="dish-desc">Papas fritas doradas y crujientes.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="60">$60</data></p>
+<div class="qty-ctl" data-ctl="papas-fritas">
+<button class="add-btn" type="button" data-add="papas-fritas" aria-label="Agregar Papas Fritas al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="papas-fritas" aria-label="Quitar uno: Papas Fritas"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="papas-fritas" aria-label="Agregar uno más: Papas Fritas"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="cat-panes" data-cat="panes" aria-labelledby="mg-panes">
+<header class="menu-group-head">
+<h3 id="mg-panes">Panes</h3>
+<p>Para mojar en cada curry</p>
+<span class="menu-group-count" data-group-count>5 platillos</span>
+</header>
+<ul class="dishes">
+<li class="dish spot-card has-photo" id="d-chapati" data-id="chapati" data-name="Chapati" data-price="20" data-cat="panes" data-hay="chapati pan plano suave, ideal para mojar en cualquier curry.">
+<div class="dish-media arch-sm"><img src="img/chapati.jpg" width="600" height="600" alt="Chapati: panes planos en una canasta de mimbre" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Chapati</h4>
+<p class="dish-desc">Pan plano suave, ideal para mojar en cualquier curry.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="20">$20</data></p>
+<div class="qty-ctl" data-ctl="chapati">
+<button class="add-btn" type="button" data-add="chapati" aria-label="Agregar Chapati al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chapati" aria-label="Quitar uno: Chapati"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chapati" aria-label="Agregar uno más: Chapati"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-naan" data-id="naan" data-name="Naan" data-price="20" data-cat="panes" data-hay="naan pan esponjoso al estilo clasico indio.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Naan</h4>
+<p class="dish-desc">Pan esponjoso al estilo clásico indio.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="20">$20</data></p>
+<div class="qty-ctl" data-ctl="naan">
+<button class="add-btn" type="button" data-add="naan" aria-label="Agregar Naan al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="naan" aria-label="Quitar uno: Naan"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="naan" aria-label="Agregar uno más: Naan"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-butter-naan" data-id="butter-naan" data-name="Butter Naan" data-price="25" data-cat="panes" data-hay="butter naan naan con mantequilla.">
+<div class="dish-media arch-sm"><img src="img/butter-naan.jpg" width="379" height="592" alt="Butter Naan con un cubo de mantequilla encima" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Butter Naan</h4>
+<p class="dish-desc">Naan con mantequilla.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="25">$25</data></p>
+<div class="qty-ctl" data-ctl="butter-naan">
+<button class="add-btn" type="button" data-add="butter-naan" aria-label="Agregar Butter Naan al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="butter-naan" aria-label="Quitar uno: Butter Naan"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="butter-naan" aria-label="Agregar uno más: Butter Naan"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-garlic-naan" data-id="garlic-naan" data-name="Garlic Naan" data-price="30" data-cat="panes" data-hay="garlic naan naan con ajo y cilantro.">
+<div class="dish-media arch-sm"><img src="img/garlic-naan.jpg" width="799" height="1200" alt="Garlic Naan dorado con ajo y cilantro" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Garlic Naan</h4>
+<p class="dish-desc">Naan con ajo y cilantro.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="30">$30</data></p>
+<div class="qty-ctl" data-ctl="garlic-naan">
+<button class="add-btn" type="button" data-add="garlic-naan" aria-label="Agregar Garlic Naan al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="garlic-naan" aria-label="Quitar uno: Garlic Naan"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="garlic-naan" aria-label="Agregar uno más: Garlic Naan"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-aloo-paratha" data-id="aloo-paratha" data-name="Aloo Paratha" data-price="70" data-cat="panes" data-hay="aloo paratha pan relleno de papa especiada.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Aloo Paratha</h4>
+<p class="dish-desc">Pan relleno de papa especiada.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="70">$70</data></p>
+<div class="qty-ctl" data-ctl="aloo-paratha">
+<button class="add-btn" type="button" data-add="aloo-paratha" aria-label="Agregar Aloo Paratha al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="aloo-paratha" aria-label="Quitar uno: Aloo Paratha"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="aloo-paratha" aria-label="Agregar uno más: Aloo Paratha"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="cat-vegetariano" data-cat="vegetariano" aria-labelledby="mg-vegetariano">
+<header class="menu-group-head">
+<h3 id="mg-vegetariano">Vegetariano</h3>
+<p>Sin carne, con todo el sabor</p>
+<span class="menu-group-count" data-group-count>12 platillos</span>
+</header>
+<ul class="dishes">
+<li class="dish spot-card" id="d-palak-paneer" data-id="palak-paneer" data-name="Palak Paneer" data-price="180" data-cat="vegetariano" data-hay="palak paneer queso paneer en salsa de espinaca y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Palak Paneer</h4>
+<p class="dish-desc">Queso paneer en salsa de espinaca y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="palak-paneer">
+<button class="add-btn" type="button" data-add="palak-paneer" aria-label="Agregar Palak Paneer al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="palak-paneer" aria-label="Quitar uno: Palak Paneer"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="palak-paneer" aria-label="Agregar uno más: Palak Paneer"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-paneer-tikka-masala" data-id="paneer-tikka-masala" data-name="Paneer Tikka Masala" data-price="180" data-cat="vegetariano" data-hay="paneer tikka masala cubos de paneer en salsa cremosa de tomate y especias.">
+<div class="dish-media arch-sm"><img src="img/paneer-tikka-masala.jpg" width="452" height="636" alt="Paneer Tikka Masala con cilantro fresco" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Paneer Tikka Masala</h4>
+<p class="dish-desc">Cubos de paneer en salsa cremosa de tomate y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="paneer-tikka-masala">
+<button class="add-btn" type="button" data-add="paneer-tikka-masala" aria-label="Agregar Paneer Tikka Masala al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="paneer-tikka-masala" aria-label="Quitar uno: Paneer Tikka Masala"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="paneer-tikka-masala" aria-label="Agregar uno más: Paneer Tikka Masala"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-palak-aloo" data-id="palak-aloo" data-name="Palak Aloo" data-price="180" data-cat="vegetariano" data-hay="palak aloo papa guisada en salsa de espinaca.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Palak Aloo</h4>
+<p class="dish-desc">Papa guisada en salsa de espinaca.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="palak-aloo">
+<button class="add-btn" type="button" data-add="palak-aloo" aria-label="Agregar Palak Aloo al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="palak-aloo" aria-label="Quitar uno: Palak Aloo"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="palak-aloo" aria-label="Agregar uno más: Palak Aloo"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-aloo-mutter-curry" data-id="aloo-mutter-curry" data-name="Aloo Mutter Curry" data-price="180" data-cat="vegetariano" data-hay="aloo mutter curry papa y chicharos en salsa de curry.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Aloo Mutter Curry</h4>
+<p class="dish-desc">Papa y chícharos en salsa de curry.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="aloo-mutter-curry">
+<button class="add-btn" type="button" data-add="aloo-mutter-curry" aria-label="Agregar Aloo Mutter Curry al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="aloo-mutter-curry" aria-label="Quitar uno: Aloo Mutter Curry"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="aloo-mutter-curry" aria-label="Agregar uno más: Aloo Mutter Curry"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mix-veg-curry" data-id="mix-veg-curry" data-name="Mix Veg Curry" data-price="180" data-cat="vegetariano" data-hay="mix veg curry verduras mixtas guisadas con especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mix Veg Curry</h4>
+<p class="dish-desc">Verduras mixtas guisadas con especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="mix-veg-curry">
+<button class="add-btn" type="button" data-add="mix-veg-curry" aria-label="Agregar Mix Veg Curry al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mix-veg-curry" aria-label="Quitar uno: Mix Veg Curry"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mix-veg-curry" aria-label="Agregar uno más: Mix Veg Curry"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mix-veg-kofta-curry" data-id="mix-veg-kofta-curry" data-name="Mix Veg Kofta Curry" data-price="200" data-cat="vegetariano" data-hay="mix veg kofta curry bolitas de verduras en salsa de curry.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mix Veg Kofta Curry</h4>
+<p class="dish-desc">Bolitas de verduras en salsa de curry.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="mix-veg-kofta-curry">
+<button class="add-btn" type="button" data-add="mix-veg-kofta-curry" aria-label="Agregar Mix Veg Kofta Curry al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mix-veg-kofta-curry" aria-label="Quitar uno: Mix Veg Kofta Curry"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mix-veg-kofta-curry" aria-label="Agregar uno más: Mix Veg Kofta Curry"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-channa-curry" data-id="channa-curry" data-name="Channa Curry" data-price="180" data-cat="vegetariano" data-hay="channa curry garbanzos guisados con especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Channa Curry</h4>
+<p class="dish-desc">Garbanzos guisados con especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="channa-curry">
+<button class="add-btn" type="button" data-add="channa-curry" aria-label="Agregar Channa Curry al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="channa-curry" aria-label="Quitar uno: Channa Curry"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="channa-curry" aria-label="Agregar uno más: Channa Curry"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-rajma-curry" data-id="rajma-curry" data-name="Rajma Curry" data-price="180" data-cat="vegetariano" data-hay="rajma curry frijoles rojos en salsa especiada.">
+<div class="dish-media arch-sm"><img src="img/rajma-curry.jpg" width="554" height="520" alt="Rajma Curry: frijoles rojos en salsa especiada con cilantro" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Rajma Curry</h4>
+<p class="dish-desc">Frijoles rojos en salsa especiada.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="rajma-curry">
+<button class="add-btn" type="button" data-add="rajma-curry" aria-label="Agregar Rajma Curry al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="rajma-curry" aria-label="Quitar uno: Rajma Curry"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="rajma-curry" aria-label="Agregar uno más: Rajma Curry"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mix-daal-curry" data-id="mix-daal-curry" data-name="Mix Daal Curry" data-price="200" data-cat="vegetariano" data-hay="mix daal curry lentejas mixtas cocinadas con especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mix Daal Curry</h4>
+<p class="dish-desc">Lentejas mixtas cocinadas con especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="mix-daal-curry">
+<button class="add-btn" type="button" data-add="mix-daal-curry" aria-label="Agregar Mix Daal Curry al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mix-daal-curry" aria-label="Quitar uno: Mix Daal Curry"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mix-daal-curry" aria-label="Agregar uno más: Mix Daal Curry"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mix-veg-soup" data-id="mix-veg-soup" data-name="Mix Veg Soup" data-price="180" data-cat="vegetariano" data-hay="mix veg soup sopa caliente de verduras.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mix Veg Soup</h4>
+<p class="dish-desc">Sopa caliente de verduras.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="mix-veg-soup">
+<button class="add-btn" type="button" data-add="mix-veg-soup" aria-label="Agregar Mix Veg Soup al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mix-veg-soup" aria-label="Quitar uno: Mix Veg Soup"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mix-veg-soup" aria-label="Agregar uno más: Mix Veg Soup"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mix-veg-biryani" data-id="mix-veg-biryani" data-name="Mix Veg Biryani" data-price="200" data-cat="vegetariano" data-hay="mix veg biryani arroz basmati con verduras y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mix Veg Biryani</h4>
+<p class="dish-desc">Arroz basmati con verduras y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="mix-veg-biryani">
+<button class="add-btn" type="button" data-add="mix-veg-biryani" aria-label="Agregar Mix Veg Biryani al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mix-veg-biryani" aria-label="Quitar uno: Mix Veg Biryani"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mix-veg-biryani" aria-label="Agregar uno más: Mix Veg Biryani"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-veg-fried-noodles" data-id="veg-fried-noodles" data-name="Veg Fried Noodles" data-price="180" data-cat="vegetariano" data-hay="veg fried noodles fideos fritos con verduras.">
+<div class="dish-media arch-sm"><img src="img/veg-fried-noodles.jpg" width="768" height="1024" alt="Veg Fried Noodles: fideos fritos con calabacita y verduras" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Veg Fried Noodles</h4>
+<p class="dish-desc">Fideos fritos con verduras.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="veg-fried-noodles">
+<button class="add-btn" type="button" data-add="veg-fried-noodles" aria-label="Agregar Veg Fried Noodles al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="veg-fried-noodles" aria-label="Quitar uno: Veg Fried Noodles"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="veg-fried-noodles" aria-label="Agregar uno más: Veg Fried Noodles"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="cat-pollo" data-cat="pollo" aria-labelledby="mg-pollo">
+<header class="menu-group-head">
+<h3 id="mg-pollo">Pollo</h3>
+<p>Chicken</p>
+<span class="menu-group-count" data-group-count>12 platillos</span>
+</header>
+<ul class="dishes">
+<li class="dish spot-card" id="d-chicken-curry" data-id="chicken-curry" data-name="Chicken Curry" data-price="200" data-cat="pollo" data-hay="chicken curry pollo guisado en salsa de especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Curry</h4>
+<p class="dish-desc">Pollo guisado en salsa de especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="chicken-curry">
+<button class="add-btn" type="button" data-add="chicken-curry" aria-label="Agregar Chicken Curry al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-curry" aria-label="Quitar uno: Chicken Curry"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-curry" aria-label="Agregar uno más: Chicken Curry"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-chicken-tikka-masala" data-id="chicken-tikka-masala" data-name="Chicken Tikka Masala" data-price="200" data-cat="pollo" data-hay="chicken tikka masala pollo en salsa cremosa de tomate y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Tikka Masala</h4>
+<p class="dish-desc">Pollo en salsa cremosa de tomate y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="chicken-tikka-masala">
+<button class="add-btn" type="button" data-add="chicken-tikka-masala" aria-label="Agregar Chicken Tikka Masala al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-tikka-masala" aria-label="Quitar uno: Chicken Tikka Masala"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-tikka-masala" aria-label="Agregar uno más: Chicken Tikka Masala"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-palak-chicken" data-id="palak-chicken" data-name="Palak Chicken" data-price="200" data-cat="pollo" data-hay="palak chicken pollo con espinaca y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Palak Chicken</h4>
+<p class="dish-desc">Pollo con espinaca y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="palak-chicken">
+<button class="add-btn" type="button" data-add="palak-chicken" aria-label="Agregar Palak Chicken al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="palak-chicken" aria-label="Quitar uno: Palak Chicken"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="palak-chicken" aria-label="Agregar uno más: Palak Chicken"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-chicken-nihari" data-id="chicken-nihari" data-name="Chicken Nihari" data-price="200" data-cat="pollo" data-hay="chicken nihari guiso de pollo cocinado lento con especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Nihari</h4>
+<p class="dish-desc">Guiso de pollo cocinado lento con especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="chicken-nihari">
+<button class="add-btn" type="button" data-add="chicken-nihari" aria-label="Agregar Chicken Nihari al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-nihari" aria-label="Quitar uno: Chicken Nihari"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-nihari" aria-label="Agregar uno más: Chicken Nihari"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-chicken-keema" data-id="chicken-keema" data-name="Chicken Keema" data-price="200" data-cat="pollo" data-hay="chicken keema carne molida de pollo guisada con especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Keema</h4>
+<p class="dish-desc">Carne molida de pollo guisada con especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="chicken-keema">
+<button class="add-btn" type="button" data-add="chicken-keema" aria-label="Agregar Chicken Keema al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-keema" aria-label="Quitar uno: Chicken Keema"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-keema" aria-label="Agregar uno más: Chicken Keema"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-chicken-kofta-curry" data-id="chicken-kofta-curry" data-name="Chicken Kofta Curry" data-price="220" data-cat="pollo" data-hay="chicken kofta curry bolitas de pollo en salsa de curry.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Kofta Curry</h4>
+<p class="dish-desc">Bolitas de pollo en salsa de curry.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="220">$220</data></p>
+<div class="qty-ctl" data-ctl="chicken-kofta-curry">
+<button class="add-btn" type="button" data-add="chicken-kofta-curry" aria-label="Agregar Chicken Kofta Curry al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-kofta-curry" aria-label="Quitar uno: Chicken Kofta Curry"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-kofta-curry" aria-label="Agregar uno más: Chicken Kofta Curry"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-chicken-biryani" data-id="chicken-biryani" data-name="Chicken Biryani" data-price="220" data-cat="pollo" data-hay="chicken biryani arroz basmati con pollo y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Biryani</h4>
+<p class="dish-desc">Arroz basmati con pollo y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="220">$220</data></p>
+<div class="qty-ctl" data-ctl="chicken-biryani">
+<button class="add-btn" type="button" data-add="chicken-biryani" aria-label="Agregar Chicken Biryani al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-biryani" aria-label="Quitar uno: Chicken Biryani"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-biryani" aria-label="Agregar uno más: Chicken Biryani"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-chicken-fried-noodles" data-id="chicken-fried-noodles" data-name="Chicken Fried Noodles" data-price="200" data-cat="pollo" data-hay="chicken fried noodles fideos fritos con pollo.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Fried Noodles</h4>
+<p class="dish-desc">Fideos fritos con pollo.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="chicken-fried-noodles">
+<button class="add-btn" type="button" data-add="chicken-fried-noodles" aria-label="Agregar Chicken Fried Noodles al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-fried-noodles" aria-label="Quitar uno: Chicken Fried Noodles"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-fried-noodles" aria-label="Agregar uno más: Chicken Fried Noodles"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-chicken-veg-soup" data-id="chicken-veg-soup" data-name="Chicken Veg Soup" data-price="180" data-cat="pollo" data-hay="chicken veg soup sopa caliente de pollo y verduras.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Veg Soup</h4>
+<p class="dish-desc">Sopa caliente de pollo y verduras.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="chicken-veg-soup">
+<button class="add-btn" type="button" data-add="chicken-veg-soup" aria-label="Agregar Chicken Veg Soup al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-veg-soup" aria-label="Quitar uno: Chicken Veg Soup"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-veg-soup" aria-label="Agregar uno más: Chicken Veg Soup"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-chicken-shawarma-roll" data-id="chicken-shawarma-roll" data-name="Chicken Shawarma Roll" data-price="180" data-cat="pollo" data-hay="chicken shawarma roll rollo de shawarma de pollo.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Shawarma Roll</h4>
+<p class="dish-desc">Rollo de shawarma de pollo.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="chicken-shawarma-roll">
+<button class="add-btn" type="button" data-add="chicken-shawarma-roll" aria-label="Agregar Chicken Shawarma Roll al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-shawarma-roll" aria-label="Quitar uno: Chicken Shawarma Roll"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-shawarma-roll" aria-label="Agregar uno más: Chicken Shawarma Roll"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-chicken-tacos-3-pz" data-id="chicken-tacos-3-pz" data-name="Chicken Tacos (3 pz)" data-price="150" data-cat="pollo" data-hay="chicken tacos (3 pz) tres tacos de pollo.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Tacos (3 pz)</h4>
+<p class="dish-desc">Tres tacos de pollo.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="150">$150</data></p>
+<div class="qty-ctl" data-ctl="chicken-tacos-3-pz">
+<button class="add-btn" type="button" data-add="chicken-tacos-3-pz" aria-label="Agregar Chicken Tacos (3 pz) al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-tacos-3-pz" aria-label="Quitar uno: Chicken Tacos (3 pz)"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-tacos-3-pz" aria-label="Agregar uno más: Chicken Tacos (3 pz)"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-chicken-kabab" data-id="chicken-kabab" data-name="Chicken Kabab" data-price="300" data-cat="pollo" data-hay="chicken kabab kabab de carne molida de pollo, con arroz.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Chicken Kabab</h4>
+<p class="dish-desc">Kabab de carne molida de pollo, con arroz.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="300">$300</data></p>
+<div class="qty-ctl" data-ctl="chicken-kabab">
+<button class="add-btn" type="button" data-add="chicken-kabab" aria-label="Agregar Chicken Kabab al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="chicken-kabab" aria-label="Quitar uno: Chicken Kabab"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="chicken-kabab" aria-label="Agregar uno más: Chicken Kabab"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="cat-res" data-cat="res" aria-labelledby="mg-res">
+<header class="menu-group-head">
+<h3 id="mg-res">Res</h3>
+<p>Beef</p>
+<span class="menu-group-count" data-group-count>10 platillos</span>
+</header>
+<ul class="dishes">
+<li class="dish spot-card" id="d-beef-curry" data-id="beef-curry" data-name="Beef Curry" data-price="220" data-cat="res" data-hay="beef curry res guisada en salsa de especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Beef Curry</h4>
+<p class="dish-desc">Res guisada en salsa de especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="220">$220</data></p>
+<div class="qty-ctl" data-ctl="beef-curry">
+<button class="add-btn" type="button" data-add="beef-curry" aria-label="Agregar Beef Curry al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="beef-curry" aria-label="Quitar uno: Beef Curry"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="beef-curry" aria-label="Agregar uno más: Beef Curry"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-beef-tikka-masala" data-id="beef-tikka-masala" data-name="Beef Tikka Masala" data-price="220" data-cat="res" data-hay="beef tikka masala res en salsa cremosa de tomate y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Beef Tikka Masala</h4>
+<p class="dish-desc">Res en salsa cremosa de tomate y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="220">$220</data></p>
+<div class="qty-ctl" data-ctl="beef-tikka-masala">
+<button class="add-btn" type="button" data-add="beef-tikka-masala" aria-label="Agregar Beef Tikka Masala al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="beef-tikka-masala" aria-label="Quitar uno: Beef Tikka Masala"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="beef-tikka-masala" aria-label="Agregar uno más: Beef Tikka Masala"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-beef-palak" data-id="beef-palak" data-name="Beef Palak" data-price="220" data-cat="res" data-hay="beef palak res con espinaca y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Beef Palak</h4>
+<p class="dish-desc">Res con espinaca y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="220">$220</data></p>
+<div class="qty-ctl" data-ctl="beef-palak">
+<button class="add-btn" type="button" data-add="beef-palak" aria-label="Agregar Beef Palak al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="beef-palak" aria-label="Quitar uno: Beef Palak"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="beef-palak" aria-label="Agregar uno más: Beef Palak"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-beef-nihari" data-id="beef-nihari" data-name="Beef Nihari" data-price="220" data-cat="res" data-hay="beef nihari guiso de res cocinado lento con especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Beef Nihari</h4>
+<p class="dish-desc">Guiso de res cocinado lento con especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="220">$220</data></p>
+<div class="qty-ctl" data-ctl="beef-nihari">
+<button class="add-btn" type="button" data-add="beef-nihari" aria-label="Agregar Beef Nihari al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="beef-nihari" aria-label="Quitar uno: Beef Nihari"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="beef-nihari" aria-label="Agregar uno más: Beef Nihari"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-beef-keema" data-id="beef-keema" data-name="Beef Keema" data-price="220" data-cat="res" data-hay="beef keema carne molida de res guisada con especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Beef Keema</h4>
+<p class="dish-desc">Carne molida de res guisada con especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="220">$220</data></p>
+<div class="qty-ctl" data-ctl="beef-keema">
+<button class="add-btn" type="button" data-add="beef-keema" aria-label="Agregar Beef Keema al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="beef-keema" aria-label="Quitar uno: Beef Keema"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="beef-keema" aria-label="Agregar uno más: Beef Keema"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-beef-biryani" data-id="beef-biryani" data-name="Beef Biryani" data-price="250" data-cat="res" data-hay="beef biryani arroz basmati con res y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Beef Biryani</h4>
+<p class="dish-desc">Arroz basmati con res y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="250">$250</data></p>
+<div class="qty-ctl" data-ctl="beef-biryani">
+<button class="add-btn" type="button" data-add="beef-biryani" aria-label="Agregar Beef Biryani al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="beef-biryani" aria-label="Quitar uno: Beef Biryani"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="beef-biryani" aria-label="Agregar uno más: Beef Biryani"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-beef-fried-noodles" data-id="beef-fried-noodles" data-name="Beef Fried Noodles" data-price="220" data-cat="res" data-hay="beef fried noodles fideos fritos con res.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Beef Fried Noodles</h4>
+<p class="dish-desc">Fideos fritos con res.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="220">$220</data></p>
+<div class="qty-ctl" data-ctl="beef-fried-noodles">
+<button class="add-btn" type="button" data-add="beef-fried-noodles" aria-label="Agregar Beef Fried Noodles al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="beef-fried-noodles" aria-label="Quitar uno: Beef Fried Noodles"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="beef-fried-noodles" aria-label="Agregar uno más: Beef Fried Noodles"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-beef-veg-soup" data-id="beef-veg-soup" data-name="Beef Veg Soup" data-price="220" data-cat="res" data-hay="beef veg soup sopa caliente de res y verduras.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Beef Veg Soup</h4>
+<p class="dish-desc">Sopa caliente de res y verduras.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="220">$220</data></p>
+<div class="qty-ctl" data-ctl="beef-veg-soup">
+<button class="add-btn" type="button" data-add="beef-veg-soup" aria-label="Agregar Beef Veg Soup al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="beef-veg-soup" aria-label="Quitar uno: Beef Veg Soup"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="beef-veg-soup" aria-label="Agregar uno más: Beef Veg Soup"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-beef-shawarma-roll" data-id="beef-shawarma-roll" data-name="Beef Shawarma Roll" data-price="200" data-cat="res" data-hay="beef shawarma roll rollo de shawarma de res.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Beef Shawarma Roll</h4>
+<p class="dish-desc">Rollo de shawarma de res.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="beef-shawarma-roll">
+<button class="add-btn" type="button" data-add="beef-shawarma-roll" aria-label="Agregar Beef Shawarma Roll al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="beef-shawarma-roll" aria-label="Quitar uno: Beef Shawarma Roll"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="beef-shawarma-roll" aria-label="Agregar uno más: Beef Shawarma Roll"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-beef-tacos" data-id="beef-tacos" data-name="Beef Tacos" data-price="180" data-cat="res" data-hay="beef tacos tacos de res.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Beef Tacos</h4>
+<p class="dish-desc">Tacos de res.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="180">$180</data></p>
+<div class="qty-ctl" data-ctl="beef-tacos">
+<button class="add-btn" type="button" data-add="beef-tacos" aria-label="Agregar Beef Tacos al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="beef-tacos" aria-label="Quitar uno: Beef Tacos"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="beef-tacos" aria-label="Agregar uno más: Beef Tacos"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="cat-mutton" data-cat="mutton" aria-labelledby="mg-mutton">
+<header class="menu-group-head">
+<h3 id="mg-mutton">Mutton</h3>
+<p>Platillos de mutton</p>
+<span class="menu-group-count" data-group-count>8 platillos</span>
+</header>
+<ul class="dishes">
+<li class="dish spot-card" id="d-mutton-curry" data-id="mutton-curry" data-name="Mutton Curry" data-price="250" data-cat="mutton" data-hay="mutton curry mutton guisado en salsa de especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mutton Curry</h4>
+<p class="dish-desc">Mutton guisado en salsa de especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="250">$250</data></p>
+<div class="qty-ctl" data-ctl="mutton-curry">
+<button class="add-btn" type="button" data-add="mutton-curry" aria-label="Agregar Mutton Curry al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mutton-curry" aria-label="Quitar uno: Mutton Curry"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mutton-curry" aria-label="Agregar uno más: Mutton Curry"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mutton-tikka-masala" data-id="mutton-tikka-masala" data-name="Mutton Tikka Masala" data-price="250" data-cat="mutton" data-hay="mutton tikka masala mutton en salsa cremosa de tomate y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mutton Tikka Masala</h4>
+<p class="dish-desc">Mutton en salsa cremosa de tomate y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="250">$250</data></p>
+<div class="qty-ctl" data-ctl="mutton-tikka-masala">
+<button class="add-btn" type="button" data-add="mutton-tikka-masala" aria-label="Agregar Mutton Tikka Masala al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mutton-tikka-masala" aria-label="Quitar uno: Mutton Tikka Masala"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mutton-tikka-masala" aria-label="Agregar uno más: Mutton Tikka Masala"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mutton-palak" data-id="mutton-palak" data-name="Mutton Palak" data-price="250" data-cat="mutton" data-hay="mutton palak mutton con espinaca y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mutton Palak</h4>
+<p class="dish-desc">Mutton con espinaca y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="250">$250</data></p>
+<div class="qty-ctl" data-ctl="mutton-palak">
+<button class="add-btn" type="button" data-add="mutton-palak" aria-label="Agregar Mutton Palak al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mutton-palak" aria-label="Quitar uno: Mutton Palak"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mutton-palak" aria-label="Agregar uno más: Mutton Palak"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mutton-nihari" data-id="mutton-nihari" data-name="Mutton Nihari" data-price="250" data-cat="mutton" data-hay="mutton nihari guiso de mutton cocinado lento con especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mutton Nihari</h4>
+<p class="dish-desc">Guiso de mutton cocinado lento con especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="250">$250</data></p>
+<div class="qty-ctl" data-ctl="mutton-nihari">
+<button class="add-btn" type="button" data-add="mutton-nihari" aria-label="Agregar Mutton Nihari al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mutton-nihari" aria-label="Quitar uno: Mutton Nihari"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mutton-nihari" aria-label="Agregar uno más: Mutton Nihari"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mutton-keema" data-id="mutton-keema" data-name="Mutton Keema" data-price="250" data-cat="mutton" data-hay="mutton keema mutton molido guisado con especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mutton Keema</h4>
+<p class="dish-desc">Mutton molido guisado con especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="250">$250</data></p>
+<div class="qty-ctl" data-ctl="mutton-keema">
+<button class="add-btn" type="button" data-add="mutton-keema" aria-label="Agregar Mutton Keema al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mutton-keema" aria-label="Quitar uno: Mutton Keema"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mutton-keema" aria-label="Agregar uno más: Mutton Keema"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mutton-biryani" data-id="mutton-biryani" data-name="Mutton Biryani" data-price="280" data-cat="mutton" data-hay="mutton biryani arroz basmati con mutton y especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mutton Biryani</h4>
+<p class="dish-desc">Arroz basmati con mutton y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="280">$280</data></p>
+<div class="qty-ctl" data-ctl="mutton-biryani">
+<button class="add-btn" type="button" data-add="mutton-biryani" aria-label="Agregar Mutton Biryani al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mutton-biryani" aria-label="Quitar uno: Mutton Biryani"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mutton-biryani" aria-label="Agregar uno más: Mutton Biryani"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mutton-fried-noodles" data-id="mutton-fried-noodles" data-name="Mutton Fried Noodles" data-price="250" data-cat="mutton" data-hay="mutton fried noodles fideos fritos con mutton.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mutton Fried Noodles</h4>
+<p class="dish-desc">Fideos fritos con mutton.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="250">$250</data></p>
+<div class="qty-ctl" data-ctl="mutton-fried-noodles">
+<button class="add-btn" type="button" data-add="mutton-fried-noodles" aria-label="Agregar Mutton Fried Noodles al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mutton-fried-noodles" aria-label="Quitar uno: Mutton Fried Noodles"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mutton-fried-noodles" aria-label="Agregar uno más: Mutton Fried Noodles"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-mutton-shawarma-roll" data-id="mutton-shawarma-roll" data-name="Mutton Shawarma Roll" data-price="200" data-cat="mutton" data-hay="mutton shawarma roll rollo de shawarma de mutton.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Mutton Shawarma Roll</h4>
+<p class="dish-desc">Rollo de shawarma de mutton.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="mutton-shawarma-roll">
+<button class="add-btn" type="button" data-add="mutton-shawarma-roll" aria-label="Agregar Mutton Shawarma Roll al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="mutton-shawarma-roll" aria-label="Quitar uno: Mutton Shawarma Roll"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="mutton-shawarma-roll" aria-label="Agregar uno más: Mutton Shawarma Roll"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="cat-pescado" data-cat="pescado" aria-labelledby="mg-pescado">
+<header class="menu-group-head">
+<h3 id="mg-pescado">Pescado</h3>
+<p>Fish</p>
+<span class="menu-group-count" data-group-count>2 platillos</span>
+</header>
+<ul class="dishes">
+<li class="dish spot-card" id="d-fish-curry" data-id="fish-curry" data-name="Fish Curry" data-price="250" data-cat="pescado" data-hay="fish curry pescado guisado en salsa de especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Fish Curry</h4>
+<p class="dish-desc">Pescado guisado en salsa de especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="250">$250</data></p>
+<div class="qty-ctl" data-ctl="fish-curry">
+<button class="add-btn" type="button" data-add="fish-curry" aria-label="Agregar Fish Curry al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="fish-curry" aria-label="Quitar uno: Fish Curry"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="fish-curry" aria-label="Agregar uno más: Fish Curry"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-fish-fried" data-id="fish-fried" data-name="Fish Fried" data-price="200" data-cat="pescado" data-hay="fish fried pescado frito con especias.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Fish Fried</h4>
+<p class="dish-desc">Pescado frito con especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="200">$200</data></p>
+<div class="qty-ctl" data-ctl="fish-fried">
+<button class="add-btn" type="button" data-add="fish-fried" aria-label="Agregar Fish Fried al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="fish-fried" aria-label="Quitar uno: Fish Fried"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="fish-fried" aria-label="Agregar uno más: Fish Fried"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="cat-extras" data-cat="extras" aria-labelledby="mg-extras">
+<header class="menu-group-head">
+<h3 id="mg-extras">Thali, arroz y postre</h3>
+<p>Para completar tu mesa</p>
+<span class="menu-group-count" data-group-count>4 platillos</span>
+</header>
+<ul class="dishes">
+<li class="dish spot-card" id="d-indian-thali" data-id="indian-thali" data-name="Indian Thali" data-price="600" data-cat="extras" data-hay="indian thali 4 guisados: channa curry, mix veg curry y mas.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Indian Thali</h4><span class="dish-badge">Plato completo</span>
+<p class="dish-desc">4 guisados: channa curry, mix veg curry y más.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="600">$600</data></p>
+<div class="qty-ctl" data-ctl="indian-thali">
+<button class="add-btn" type="button" data-add="indian-thali" aria-label="Agregar Indian Thali al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="indian-thali" aria-label="Quitar uno: Indian Thali"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="indian-thali" aria-label="Agregar uno más: Indian Thali"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-arroz-basmati" data-id="arroz-basmati" data-name="Arroz Basmati" data-price="50" data-cat="extras" data-hay="arroz basmati arroz basmati de grano largo.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Arroz Basmati</h4>
+<p class="dish-desc">Arroz basmati de grano largo.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="50">$50</data></p>
+<div class="qty-ctl" data-ctl="arroz-basmati">
+<button class="add-btn" type="button" data-add="arroz-basmati" aria-label="Agregar Arroz Basmati al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="arroz-basmati" aria-label="Quitar uno: Arroz Basmati"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="arroz-basmati" aria-label="Agregar uno más: Arroz Basmati"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-pasta-alfredo" data-id="pasta-alfredo" data-name="Pasta Alfredo" data-price="150" data-cat="extras" data-hay="pasta alfredo fettuccine en salsa cremosa alfredo.">
+<div class="dish-media arch-sm"><img src="img/pasta-alfredo.jpg" width="720" height="1080" alt="Pasta Alfredo: fettuccine en salsa cremosa con perejil" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Pasta Alfredo</h4>
+<p class="dish-desc">Fettuccine en salsa cremosa Alfredo.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="150">$150</data></p>
+<div class="qty-ctl" data-ctl="pasta-alfredo">
+<button class="add-btn" type="button" data-add="pasta-alfredo" aria-label="Agregar Pasta Alfredo al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="pasta-alfredo" aria-label="Quitar uno: Pasta Alfredo"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="pasta-alfredo" aria-label="Agregar uno más: Pasta Alfredo"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-gajar-ka-halwa" data-id="gajar-ka-halwa" data-name="Gajar Ka Halwa" data-price="50" data-cat="extras" data-hay="gajar ka halwa postre de zanahoria con leche y frutos secos.">
+<div class="dish-media arch-sm"><img src="img/gajar-halwa.jpg" width="468" height="501" alt="Gajar Ka Halwa: postre de zanahoria con almendras y nuez de la India" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Gajar Ka Halwa</h4>
+<p class="dish-desc">Postre de zanahoria con leche y frutos secos.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="50">$50</data></p>
+<div class="qty-ctl" data-ctl="gajar-ka-halwa">
+<button class="add-btn" type="button" data-add="gajar-ka-halwa" aria-label="Agregar Gajar Ka Halwa al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="gajar-ka-halwa" aria-label="Quitar uno: Gajar Ka Halwa"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="gajar-ka-halwa" aria-label="Agregar uno más: Gajar Ka Halwa"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="cat-bebidas" data-cat="bebidas" aria-labelledby="mg-bebidas">
+<header class="menu-group-head">
+<h3 id="mg-bebidas">Bebidas</h3>
+<p>Fríos, cremosos o con especias</p>
+<span class="menu-group-count" data-group-count>8 platillos</span>
+</header>
+<ul class="dishes">
+<li class="dish spot-card has-photo" id="d-masala-chai" data-id="masala-chai" data-name="Masala Chai" data-price="40" data-cat="bebidas" data-hay="masala chai te negro con leche y especias.">
+<div class="dish-media arch-sm"><img src="img/masala-chai.jpg" width="720" height="780" alt="Masala Chai rodeado de especias: clavo, cardamomo, canela y pimienta" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Masala Chai</h4>
+<p class="dish-desc">Té negro con leche y especias.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="40">$40</data></p>
+<div class="qty-ctl" data-ctl="masala-chai">
+<button class="add-btn" type="button" data-add="masala-chai" aria-label="Agregar Masala Chai al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="masala-chai" aria-label="Quitar uno: Masala Chai"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="masala-chai" aria-label="Agregar uno más: Masala Chai"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-kahwa" data-id="kahwa" data-name="Kahwa" data-price="30" data-cat="bebidas" data-hay="kahwa te especiado estilo cachemira con canela y almendras.">
+<div class="dish-media arch-sm"><img src="img/kahwa.jpg" width="350" height="286" alt="Kahwa: té especiado con canela, almendras y pétalos de rosa" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Kahwa</h4>
+<p class="dish-desc">Té especiado estilo Cachemira con canela y almendras.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="30">$30</data></p>
+<div class="qty-ctl" data-ctl="kahwa">
+<button class="add-btn" type="button" data-add="kahwa" aria-label="Agregar Kahwa al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="kahwa" aria-label="Quitar uno: Kahwa"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="kahwa" aria-label="Agregar uno más: Kahwa"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-lassi-natural" data-id="lassi-natural" data-name="Lassi Natural" data-price="50" data-cat="bebidas" data-hay="lassi natural bebida fria y cremosa de yogur.">
+<div class="dish-media arch-sm"><img src="img/lassi-natural.jpg" width="468" height="655" alt="Lassi natural en vaso alto con una hoja de menta" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Lassi Natural</h4>
+<p class="dish-desc">Bebida fría y cremosa de yogur.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="50">$50</data></p>
+<div class="qty-ctl" data-ctl="lassi-natural">
+<button class="add-btn" type="button" data-add="lassi-natural" aria-label="Agregar Lassi Natural al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="lassi-natural" aria-label="Quitar uno: Lassi Natural"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="lassi-natural" aria-label="Agregar uno más: Lassi Natural"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-lassi-mango" data-id="lassi-mango" data-name="Lassi Mango" data-price="60" data-cat="bebidas" data-hay="lassi mango lassi cremoso de mango.">
+<div class="dish-media arch-sm"><img src="img/lassi-mango.jpg" width="960" height="1200" alt="Lassi de mango en vaso con menta" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Lassi Mango</h4>
+<p class="dish-desc">Lassi cremoso de mango.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="60">$60</data></p>
+<div class="qty-ctl" data-ctl="lassi-mango">
+<button class="add-btn" type="button" data-add="lassi-mango" aria-label="Agregar Lassi Mango al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="lassi-mango" aria-label="Quitar uno: Lassi Mango"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="lassi-mango" aria-label="Agregar uno más: Lassi Mango"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-lassi-fresa" data-id="lassi-fresa" data-name="Lassi Fresa" data-price="60" data-cat="bebidas" data-hay="lassi fresa lassi cremoso de fresa.">
+<div class="dish-media arch-sm"><img src="img/lassi-fresa.jpg" width="360" height="540" alt="Lassi de fresa con fresas frescas alrededor" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Lassi Fresa</h4>
+<p class="dish-desc">Lassi cremoso de fresa.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="60">$60</data></p>
+<div class="qty-ctl" data-ctl="lassi-fresa">
+<button class="add-btn" type="button" data-add="lassi-fresa" aria-label="Agregar Lassi Fresa al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="lassi-fresa" aria-label="Quitar uno: Lassi Fresa"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="lassi-fresa" aria-label="Agregar uno más: Lassi Fresa"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-rooh-afza" data-id="rooh-afza" data-name="Rooh Afza" data-price="40" data-cat="bebidas" data-hay="rooh afza bebida refrescante de rosas, servida fria.">
+<div class="dish-media arch-sm"><img src="img/rooh-afza.jpg" width="452" height="678" alt="Dos vasos de Rooh Afza con pétalos de rosa" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Rooh Afza</h4>
+<p class="dish-desc">Bebida refrescante de rosas, servida fría.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="40">$40</data></p>
+<div class="qty-ctl" data-ctl="rooh-afza">
+<button class="add-btn" type="button" data-add="rooh-afza" aria-label="Agregar Rooh Afza al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="rooh-afza" aria-label="Quitar uno: Rooh Afza"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="rooh-afza" aria-label="Agregar uno más: Rooh Afza"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card has-photo" id="d-limonada" data-id="limonada" data-name="Limonada" data-price="30" data-cat="bebidas" data-hay="limonada limonada en vaso.">
+<div class="dish-media arch-sm"><img src="img/limonada.jpg" width="195" height="259" alt="Jarra y vaso de limonada con limones" loading="lazy" decoding="async"></div>
+<div class="dish-body">
+<h4 class="dish-name">Limonada</h4>
+<p class="dish-desc">Limonada en vaso.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="30">$30</data></p>
+<div class="qty-ctl" data-ctl="limonada">
+<button class="add-btn" type="button" data-add="limonada" aria-label="Agregar Limonada al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="limonada" aria-label="Quitar uno: Limonada"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="limonada" aria-label="Agregar uno más: Limonada"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="dish spot-card" id="d-refrescos" data-id="refrescos" data-name="Refrescos" data-price="30" data-cat="bebidas" data-hay="refrescos variedad de refrescos.">
+<div class="dish-media arch-sm"><span class="dish-glyph" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span></div>
+<div class="dish-body">
+<h4 class="dish-name">Refrescos</h4>
+<p class="dish-desc">Variedad de refrescos.</p>
+</div>
+<div class="dish-side">
+<p class="dish-price"><data value="30">$30</data></p>
+<div class="qty-ctl" data-ctl="refrescos">
+<button class="add-btn" type="button" data-add="refrescos" aria-label="Agregar Refrescos al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="refrescos" aria-label="Quitar uno: Refrescos"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="refrescos" aria-label="Agregar uno más: Refrescos"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</section>
+                    <div class="menu-empty" id="menu-empty" hidden>
+                        <p class="menu-empty-title">No encontramos ese platillo.</p>
+                        <p>Prueba con otra palabra o pregúntanos por WhatsApp.</p>
+                        <button class="btn btn-glass" type="button" id="menu-reset">Ver todo el menú</button>
+                    </div>
+                </div>
+
+                <p class="menu-foot" data-reveal>Precios sujetos a cambio. Confirma disponibilidad por WhatsApp al enviar tu pedido.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             BEBIDAS (scroll vertical que se convierte en horizontal)
+             ============================================================ -->
+        <section class="hpan" id="bebidas" aria-labelledby="drinks-title" data-hpan>
+            <div class="hpan-sticky">
+                <div class="container hpan-head">
+                    <h2 id="drinks-title" data-split>Lassi, chai y algo más.</h2>
+                    <p class="lead" data-reveal style="--i:1">Fríos, cremosos o con especias. Agrega el que quieras a tu pedido.</p>
+                </div>
+                <div class="hpan-viewport">
+                    <ul class="hpan-track">
+                        <li class="drink" data-tint="#b98552" data-id="masala-chai">
+<figure class="arch drink-photo"><img src="img/masala-chai.jpg" width="720" height="780" alt="Masala Chai rodeado de especias: clavo, cardamomo, canela y pimienta" loading="lazy" decoding="async"></figure>
+<div class="drink-body">
+<h3>Masala Chai</h3>
+<p>Té negro con leche y especias.</p>
+</div>
+<div class="drink-foot">
+<p class="drink-price"><data value="40">$40</data></p>
+<div class="qty-ctl" data-ctl="masala-chai">
+<button class="add-btn" type="button" data-add="masala-chai" aria-label="Agregar Masala Chai al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="masala-chai" aria-label="Quitar uno: Masala Chai"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="masala-chai" aria-label="Agregar uno más: Masala Chai"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="drink" data-tint="#d9a45a" data-id="kahwa">
+<figure class="arch drink-photo"><img src="img/kahwa.jpg" width="350" height="286" alt="Kahwa: té especiado con canela, almendras y pétalos de rosa" loading="lazy" decoding="async"></figure>
+<div class="drink-body">
+<h3>Kahwa</h3>
+<p>Té especiado estilo Cachemira con canela y almendras.</p>
+</div>
+<div class="drink-foot">
+<p class="drink-price"><data value="30">$30</data></p>
+<div class="qty-ctl" data-ctl="kahwa">
+<button class="add-btn" type="button" data-add="kahwa" aria-label="Agregar Kahwa al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="kahwa" aria-label="Quitar uno: Kahwa"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="kahwa" aria-label="Agregar uno más: Kahwa"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="drink" data-tint="#cfe0d6" data-id="lassi-natural">
+<figure class="arch drink-photo"><img src="img/lassi-natural.jpg" width="468" height="655" alt="Lassi natural en vaso alto con una hoja de menta" loading="lazy" decoding="async"></figure>
+<div class="drink-body">
+<h3>Lassi Natural</h3>
+<p>Bebida fría y cremosa de yogur.</p>
+</div>
+<div class="drink-foot">
+<p class="drink-price"><data value="50">$50</data></p>
+<div class="qty-ctl" data-ctl="lassi-natural">
+<button class="add-btn" type="button" data-add="lassi-natural" aria-label="Agregar Lassi Natural al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="lassi-natural" aria-label="Quitar uno: Lassi Natural"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="lassi-natural" aria-label="Agregar uno más: Lassi Natural"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="drink" data-tint="#f0b43a" data-id="lassi-mango">
+<figure class="arch drink-photo"><img src="img/lassi-mango.jpg" width="960" height="1200" alt="Lassi de mango en vaso con menta" loading="lazy" decoding="async"></figure>
+<div class="drink-body">
+<h3>Lassi Mango</h3>
+<p>Lassi cremoso de mango.</p>
+</div>
+<div class="drink-foot">
+<p class="drink-price"><data value="60">$60</data></p>
+<div class="qty-ctl" data-ctl="lassi-mango">
+<button class="add-btn" type="button" data-add="lassi-mango" aria-label="Agregar Lassi Mango al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="lassi-mango" aria-label="Quitar uno: Lassi Mango"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="lassi-mango" aria-label="Agregar uno más: Lassi Mango"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="drink" data-tint="#e0788f" data-id="lassi-fresa">
+<figure class="arch drink-photo"><img src="img/lassi-fresa.jpg" width="360" height="540" alt="Lassi de fresa con fresas frescas alrededor" loading="lazy" decoding="async"></figure>
+<div class="drink-body">
+<h3>Lassi Fresa</h3>
+<p>Lassi cremoso de fresa.</p>
+</div>
+<div class="drink-foot">
+<p class="drink-price"><data value="60">$60</data></p>
+<div class="qty-ctl" data-ctl="lassi-fresa">
+<button class="add-btn" type="button" data-add="lassi-fresa" aria-label="Agregar Lassi Fresa al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="lassi-fresa" aria-label="Quitar uno: Lassi Fresa"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="lassi-fresa" aria-label="Agregar uno más: Lassi Fresa"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="drink" data-tint="#d94a66" data-id="rooh-afza">
+<figure class="arch drink-photo"><img src="img/rooh-afza.jpg" width="452" height="678" alt="Dos vasos de Rooh Afza con pétalos de rosa" loading="lazy" decoding="async"></figure>
+<div class="drink-body">
+<h3>Rooh Afza</h3>
+<p>Bebida refrescante de rosas, servida fría.</p>
+</div>
+<div class="drink-foot">
+<p class="drink-price"><data value="40">$40</data></p>
+<div class="qty-ctl" data-ctl="rooh-afza">
+<button class="add-btn" type="button" data-add="rooh-afza" aria-label="Agregar Rooh Afza al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="rooh-afza" aria-label="Quitar uno: Rooh Afza"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="rooh-afza" aria-label="Agregar uno más: Rooh Afza"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+<li class="drink" data-tint="#a8c84a" data-id="limonada">
+<figure class="arch drink-photo"><img src="img/limonada.jpg" width="195" height="259" alt="Jarra y vaso de limonada con limones" loading="lazy" decoding="async"></figure>
+<div class="drink-body">
+<h3>Limonada</h3>
+<p>Limonada en vaso.</p>
+</div>
+<div class="drink-foot">
+<p class="drink-price"><data value="30">$30</data></p>
+<div class="qty-ctl" data-ctl="limonada">
+<button class="add-btn" type="button" data-add="limonada" aria-label="Agregar Limonada al pedido"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+<div class="stepper" hidden>
+<button type="button" data-dec="limonada" aria-label="Quitar uno: Limonada"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button>
+<output aria-live="polite">1</output>
+<button type="button" data-inc="limonada" aria-label="Agregar uno más: Limonada"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button>
+</div>
+</div>
+</div>
+</li>
+                    </ul>
+                </div>
+                <div class="hpan-progress" aria-hidden="true"><span></span></div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             COMO PEDIR
+             ============================================================ -->
+        <section class="steps-section section" id="como-pedir" aria-labelledby="steps-title">
+            <div class="container">
+                <header class="section-head section-head--center">
+                    <h2 id="steps-title" data-split>Pide en cuatro toques.</h2>
+                    <p class="lead" data-reveal style="--i:1">Tu pedido llega armado a nuestro WhatsApp, sin vueltas.</p>
+                </header>
+
+                <ol class="steps" id="steps">
+                    <li class="step" data-reveal style="--i:0">
+                        <span class="step-node"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span>
+                        <h3>Elige tus platillos</h3>
+                        <p>Explora el menú y toca + en lo que se te antoje.</p>
+                    </li>
+                    <li class="step" data-reveal style="--i:1">
+                        <span class="step-node"><svg class="i" aria-hidden="true"><use href="#i-bag"/></svg></span>
+                        <h3>Revisa tu pedido</h3>
+                        <p>Ajusta cantidades, agrega notas y mira tu total.</p>
+                    </li>
+                    <li class="step" data-reveal style="--i:2">
+                        <span class="step-node"><svg class="i" aria-hidden="true"><use href="#i-send"/></svg></span>
+                        <h3>Envíalo por WhatsApp</h3>
+                        <p>Un mensaje listo con tu pedido, sin escribir nada.</p>
+                    </li>
+                    <li class="step" data-reveal style="--i:3">
+                        <span class="step-node"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>
+                        <h3>Confirma con nosotros</h3>
+                        <p>Te respondemos para confirmar y coordinar tu pedido.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             GUIA PARA PRIMERIZOS (tarjetas que giran)
+             ============================================================ -->
+        <section class="guide section" id="guia" aria-labelledby="guide-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="eyebrow" data-reveal>Guía para primerizos</p>
+                    <h2 id="guide-title" data-split>Tu primera vez en Dhaba.</h2>
+                    <p class="lead" data-reveal style="--i:1">Toca una tarjeta para saber qué es cada platillo y cuál pedir.</p>
+                </header>
+
+                <ul class="flips">
+                    <li class="flip" data-reveal style="--i:0">
+                        <button class="flip-front" type="button" data-initial="B" aria-expanded="false" aria-controls="fb-biryani">
+                            <span class="flip-name">Biryani</span><span class="flip-hint">Arroz con especias</span>
+                            <svg class="i flip-ico" aria-hidden="true"><use href="#i-spark"/></svg>
+                        </button>
+                        <div class="flip-back" id="fb-biryani">
+                            <p>Arroz basmati cocinado con especias y carne o verduras. Es un plato completo, ideal si llegas con hambre.</p>
+                            <a href="#menu" data-search="biryani">Ver los biryani <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="flip" data-reveal style="--i:1">
+                        <button class="flip-front" type="button" data-initial="N" aria-expanded="false" aria-controls="fb-nihari">
+                            <span class="flip-name">Nihari</span><span class="flip-hint">Guiso de cocción lenta</span>
+                            <svg class="i flip-ico" aria-hidden="true"><use href="#i-spark"/></svg>
+                        </button>
+                        <div class="flip-back" id="fb-nihari">
+                            <p>Guiso espeso de carne cocinado lentamente con especias. Va muy bien con naan.</p>
+                            <a href="#menu" data-search="nihari">Ver los nihari <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="flip" data-reveal style="--i:2">
+                        <button class="flip-front" type="button" data-initial="T" aria-expanded="false" aria-controls="fb-tikka">
+                            <span class="flip-name">Tikka Masala</span><span class="flip-hint">Salsa cremosa</span>
+                            <svg class="i flip-ico" aria-hidden="true"><use href="#i-spark"/></svg>
+                        </button>
+                        <div class="flip-back" id="fb-tikka">
+                            <p>Salsa cremosa de tomate y especias. Cubre pollo, res, mutton o paneer.</p>
+                            <a href="#menu" data-search="tikka">Ver los tikka masala <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="flip" data-reveal style="--i:3">
+                        <button class="flip-front" type="button" data-initial="K" aria-expanded="false" aria-controls="fb-keema">
+                            <span class="flip-name">Keema</span><span class="flip-hint">Carne molida</span>
+                            <svg class="i flip-ico" aria-hidden="true"><use href="#i-spark"/></svg>
+                        </button>
+                        <div class="flip-back" id="fb-keema">
+                            <p>Carne molida guisada con especias. Se come con pan o con arroz.</p>
+                            <a href="#menu" data-search="keema">Ver los keema <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="flip" data-reveal style="--i:4">
+                        <button class="flip-front" type="button" data-initial="K" aria-expanded="false" aria-controls="fb-kofta">
+                            <span class="flip-name">Kofta</span><span class="flip-hint">Bolitas en salsa</span>
+                            <svg class="i flip-ico" aria-hidden="true"><use href="#i-spark"/></svg>
+                        </button>
+                        <div class="flip-back" id="fb-kofta">
+                            <p>Bolitas de verduras o de pollo servidas en salsa de curry.</p>
+                            <a href="#menu" data-search="kofta">Ver los kofta <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="flip" data-reveal style="--i:5">
+                        <button class="flip-front" type="button" data-initial="T" aria-expanded="false" aria-controls="fb-thali">
+                            <span class="flip-name">Thali</span><span class="flip-hint">Plato completo</span>
+                            <svg class="i flip-ico" aria-hidden="true"><use href="#i-spark"/></svg>
+                        </button>
+                        <div class="flip-back" id="fb-thali">
+                            <p>Un plato con varios guisados para probar de todo a la vez.</p>
+                            <a href="#menu" data-search="thali">Ver el thali <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="flip" data-reveal style="--i:6">
+                        <button class="flip-front" type="button" data-initial="C" aria-expanded="false" aria-controls="fb-chaat">
+                            <span class="flip-name">Chaat</span><span class="flip-hint">Botana fresca</span>
+                            <svg class="i flip-ico" aria-hidden="true"><use href="#i-spark"/></svg>
+                        </button>
+                        <div class="flip-back" id="fb-chaat">
+                            <p>Botana de garbanzos con papa, cebolla, tomate y cilantro.</p>
+                            <a href="#menu" data-search="chaat">Ver el chaat <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="flip" data-reveal style="--i:7">
+                        <button class="flip-front" type="button" data-initial="L" aria-expanded="false" aria-controls="fb-lassi">
+                            <span class="flip-name">Lassi</span><span class="flip-hint">Yogur frío</span>
+                            <svg class="i flip-ico" aria-hidden="true"><use href="#i-spark"/></svg>
+                        </button>
+                        <div class="flip-back" id="fb-lassi">
+                            <p>Bebida fría y cremosa a base de yogur, natural o de fruta.</p>
+                            <a href="#menu" data-search="lassi">Ver los lassi <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             GALERIA ACORDEON
+             ============================================================ -->
+        <section class="gallery section" id="galeria" aria-labelledby="gallery-title">
+            <div class="container">
+                <header class="section-head">
+                    <h2 id="gallery-title" data-split>Míralos antes de pedir.</h2>
+                    <p class="lead" data-reveal style="--i:1">Pasa el cursor o toca una foto para ver el platillo y agregarlo a tu pedido.</p>
+                </header>
+
+                <div class="gp" id="gp" data-reveal>
+                    <ul class="gp-list">
+                        <li><button class="gp-item is-active" type="button" data-dish="garlic-naan" aria-label="Garlic Naan" aria-pressed="true"><img src="img/garlic-naan.jpg" width="799" height="1200" alt="Garlic Naan dorado con ajo y cilantro" loading="lazy" decoding="async"></button></li>
+<li><button class="gp-item" type="button" data-dish="channa-chaat" aria-label="Channa Chaat" aria-pressed="false"><img src="img/channa-chaat.jpg" width="1200" height="1200" alt="Channa Chaat: ensalada de garbanzos con papa, cebolla y cilantro" loading="lazy" decoding="async"></button></li>
+<li><button class="gp-item" type="button" data-dish="paneer-tikka-masala" aria-label="Paneer Tikka Masala" aria-pressed="false"><img src="img/paneer-tikka-masala.jpg" width="452" height="636" alt="Paneer Tikka Masala con cilantro fresco" loading="lazy" decoding="async"></button></li>
+<li><button class="gp-item" type="button" data-dish="veg-fried-noodles" aria-label="Veg Fried Noodles" aria-pressed="false"><img src="img/veg-fried-noodles.jpg" width="768" height="1024" alt="Veg Fried Noodles: fideos fritos con calabacita y verduras" loading="lazy" decoding="async"></button></li>
+<li><button class="gp-item" type="button" data-dish="aloo-piaz-pakora" aria-label="Aloo Piaz Pakora" aria-pressed="false"><img src="img/piaz-pakora.jpg" width="683" height="1024" alt="Aloo Piaz Pakora: frituras doradas de papa y cebolla con salsa" loading="lazy" decoding="async"></button></li>
+<li><button class="gp-item" type="button" data-dish="gajar-ka-halwa" aria-label="Gajar Ka Halwa" aria-pressed="false"><img src="img/gajar-halwa.jpg" width="468" height="501" alt="Gajar Ka Halwa: postre de zanahoria con almendras y nuez de la India" loading="lazy" decoding="async"></button></li>
+<li><button class="gp-item" type="button" data-dish="rajma-curry" aria-label="Rajma Curry" aria-pressed="false"><img src="img/rajma-curry.jpg" width="554" height="520" alt="Rajma Curry: frijoles rojos en salsa especiada con cilantro" loading="lazy" decoding="async"></button></li>
+                    </ul>
+                    <div class="gp-caption" id="gp-caption" aria-live="polite">
+                        <div class="gp-info">
+                            <h3 id="gp-name"></h3>
+                            <p id="gp-desc"></p>
+                        </div>
+                        <p class="gp-price" id="gp-price"></p>
+                        <div class="qty-ctl" id="gp-ctl"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             PREGUNTAS FRECUENTES
+             ============================================================ -->
+        <section class="faq section" id="faq" aria-labelledby="faq-title">
+            <div class="container faq-grid">
+                <header class="faq-head">
+                    <h2 id="faq-title" data-split>Preguntas frecuentes.</h2>
+                    <p class="lead" data-reveal style="--i:1">Lo que más nos preguntan antes de pedir.</p>
+                </header>
+                <div class="faq-list" data-reveal style="--i:2">
+                    <details class="faq-item" name="faq" open>
+<summary><span>¿Toda la comida es halal?</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+<div class="faq-a"><p>Sí. Todo el menú de Dhaba es 100% halal y contamos con certificación halal.</p></div>
+</details>
+<details class="faq-item" name="faq">
+<summary><span>¿Cómo hago mi pedido?</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+<div class="faq-a"><p>Arma tu pedido en esta página con el botón + de cada platillo y envíalo por WhatsApp. También puedes escribirnos directamente y te ayudamos.</p></div>
+</details>
+<details class="faq-item" name="faq">
+<summary><span>¿Tienen opciones vegetarianas?</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+<div class="faq-a"><p>Sí. Hay una categoría completa: Palak Paneer, Paneer Tikka Masala, Channa Curry, Rajma Curry, Mix Daal Curry, Mix Veg Biryani y más.</p></div>
+</details>
+<details class="faq-item" name="faq">
+<summary><span>¿Qué pido si es mi primera vez?</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+<div class="faq-a"><p>Empieza con un Tikka Masala, acompáñalo con un Garlic Naan y cierra con un Lassi de mango. Si tienes dudas, pregúntanos por WhatsApp.</p></div>
+</details>
+<details class="faq-item" name="faq">
+<summary><span>¿Qué es un thali?</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+<div class="faq-a"><p>Es un plato completo con varios guisados. Nuestro Indian Thali incluye 4 guisados, entre ellos channa curry y mix veg curry.</p></div>
+</details>
+<details class="faq-item" name="faq">
+<summary><span>¿Cuánto cuesta?</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+<div class="faq-a"><p>Los panes cuestan desde $20, las bebidas desde $30 y los platillos fuertes desde $150. Todos los precios están en el menú y se confirman al ordenar.</p></div>
+</details>
+<details class="faq-item" name="faq">
+<summary><span>¿Puedo pedir para varias personas?</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+<div class="faq-a"><p>Sí. Agrega todo a tu pedido o escríbenos por WhatsApp con lo que necesitas y te ayudamos a armarlo.</p></div>
+</details>
+<details class="faq-item" name="faq">
+<summary><span>¿Dónde los encuentro y cuál es el horario?</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+<div class="faq-a"><p>Escríbenos por WhatsApp y te compartimos la ubicación y el horario actualizados.</p></div>
+</details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             CONTACTO (formulario que termina en WhatsApp)
+             ============================================================ -->
+        <section class="contact section" id="contacto" aria-labelledby="contact-title">
+            <div class="contact-glow" aria-hidden="true"></div>
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <p class="eyebrow" data-reveal>Contacto</p>
+                    <h2 id="contact-title" data-split>Haz tu pedido por WhatsApp.</h2>
+                    <p class="lead" data-reveal style="--i:1">Cuéntanos qué se te antoja y te respondemos para confirmar tu pedido.</p>
+
+                    <ul class="contact-list" data-reveal style="--i:2">
+                        <li>
+                            <span class="ci"><svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+                            <div><strong>WhatsApp</strong>
+                                <a data-wa data-cfg-phone href="https://wa.me/?text=Hola%20Dhaba">Escríbenos por WhatsApp</a></div>
+                        </li>
+                        <li>
+                            <span class="ci"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg></span>
+                            <div><strong>Horario</strong>
+                                <span data-cfg="hours">Te lo compartimos por WhatsApp</span></div>
+                        </li>
+                        <li>
+                            <span class="ci"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                            <div><strong>Ubicación</strong>
+                                <span data-cfg="address">Te la compartimos por WhatsApp</span></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-card glass" data-reveal="scale" style="--i:2">
+                    <h3>Envíanos tu mensaje</h3>
+                    <form id="contact-form" novalidate>
+                        <div class="field">
+                            <label for="cf-name">Nombre</label>
+                            <input id="cf-name" name="name" type="text" autocomplete="name" required placeholder="Tu nombre" aria-describedby="cf-name-err">
+                            <p class="field-err" id="cf-name-err" role="alert"></p>
+                        </div>
+                        <div class="field">
+                            <label for="cf-phone">Teléfono <span class="opt">(opcional)</span></label>
+                            <input id="cf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Para confirmar tu pedido">
+                        </div>
+                        <div class="field">
+                            <label for="cf-topic">¿Qué necesitas?</label>
+                            <div class="select">
+                                <select id="cf-topic" name="topic">
+                                    <option>Quiero hacer un pedido</option>
+                                    <option>Tengo una pregunta</option>
+                                    <option>Otro motivo</option>
+                                </select>
+                                <svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="cf-msg">Mensaje</label>
+                            <textarea id="cf-msg" name="message" rows="4" required placeholder="Cuéntanos qué se te antoja" aria-describedby="cf-msg-err"></textarea>
+                            <p class="field-err" id="cf-msg-err" role="alert"></p>
+                        </div>
+                        <p class="form-cart" id="form-cart" hidden></p>
+                        <button class="btn btn-wa btn-lg btn-block" type="submit" id="cf-submit">
+                            <span class="btn-label"><svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg> Enviar por WhatsApp</span>
+                            <span class="btn-spin" aria-hidden="true"></span>
+                        </button>
+                        <p class="form-note">Se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="#inicio" aria-label="Dhaba, ir al inicio">
+                    <img src="img/logo-sm.webp" width="247" height="256" alt="" loading="lazy">
+                    <span class="brand-word">Dhaba</span>
+                </a>
+                <p>Comida india y pakistaní halal.</p>
+                <ul class="socials" aria-label="Redes sociales">
+                    <li data-cfg-social="instagram" hidden><a href="#" target="_blank" rel="noopener" aria-label="Instagram de Dhaba"><svg class="i" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+                    <li data-cfg-social="facebook" hidden><a href="#" target="_blank" rel="noopener" aria-label="Facebook de Dhaba"><svg class="i" aria-hidden="true"><use href="#i-facebook"/></svg></a></li>
+                    <li data-cfg-social="tiktok" hidden><a href="#" target="_blank" rel="noopener" aria-label="TikTok de Dhaba"><svg class="i" aria-hidden="true"><use href="#i-tiktok"/></svg></a></li>
+                </ul>
+            </div>
+            <nav class="footer-col" aria-label="Menú por categoría">
+                <h2>El menú</h2>
+                <ul>
+                    <li><a href="#menu" data-filter="entradas">Entradas</a></li>
+<li><a href="#menu" data-filter="panes">Panes</a></li>
+<li><a href="#menu" data-filter="vegetariano">Vegetariano</a></li>
+<li><a href="#menu" data-filter="pollo">Pollo</a></li>
+<li><a href="#menu" data-filter="res">Res</a></li>
+<li><a href="#menu" data-filter="mutton">Mutton</a></li>
+<li><a href="#menu" data-filter="pescado">Pescado</a></li>
+<li><a href="#menu" data-filter="extras">Thali y más</a></li>
+<li><a href="#menu" data-filter="bebidas">Bebidas</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-col" aria-label="Navegación del sitio">
+                <h2>Explora</h2>
+                <ul>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#bebidas">Bebidas</a></li>
+                    <li><a href="#como-pedir">Cómo pedir</a></li>
+                    <li><a href="#guia">Guía para primerizos</a></li>
+                    <li><a href="#faq">Preguntas frecuentes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="footer-mark" aria-hidden="true">DHABA</p>
+        <div class="container footer-bottom">
+            <p>© <span id="year">2026</span> Dhaba. Todos los derechos reservados.</p>
+            <p>Comida 100% halal</p>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         PEDIDO (cajón lateral)
+         ============================================================ -->
+    <dialog id="cart" class="drawer" aria-labelledby="cart-title">
+        <div class="drawer-panel">
+            <header class="drawer-head">
+                <h2 id="cart-title">Tu pedido</h2>
+                <button class="icon-btn" type="button" data-close aria-label="Cerrar pedido"><svg class="i" aria-hidden="true"><use href="#i-close"/></svg></button>
+            </header>
+
+            <div class="drawer-body">
+                <ul class="cart-list" id="cart-list"></ul>
+                <div class="cart-empty" id="cart-empty">
+                    <svg class="i" aria-hidden="true"><use href="#i-bag"/></svg>
+                    <p class="cart-empty-title">Tu pedido está vacío.</p>
+                    <p>Agrega platillos desde el menú y aparecerán aquí.</p>
+                    <a class="btn btn-gold" href="#menu" data-close>Ver el menú</a>
+                </div>
+            </div>
+
+            <footer class="drawer-foot" id="cart-foot">
+                <div class="field">
+                    <label for="cart-name">Tu nombre</label>
+                    <input id="cart-name" type="text" autocomplete="name" placeholder="Para identificar tu pedido">
+                </div>
+                <div class="field">
+                    <label for="cart-notes">Notas <span class="opt">(opcional)</span></label>
+                    <textarea id="cart-notes" rows="2" placeholder="Ej. Sin cebolla, extra naan"></textarea>
+                </div>
+                <div class="cart-total"><span>Total</span><strong id="cart-total">$0</strong></div>
+                <button class="btn btn-wa btn-lg btn-block" type="button" id="cart-send">
+                    <svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg> Enviar pedido por WhatsApp
+                </button>
+                <button class="link-btn" type="button" id="cart-clear"><svg class="i" aria-hidden="true"><use href="#i-trash"/></svg> Vaciar pedido</button>
+            </footer>
+        </div>
+    </dialog>
+
+    <!-- MENU MOVIL -->
+    <dialog id="nav-dialog" class="navsheet" aria-label="Menú de navegación">
+        <div class="navsheet-panel">
+            <header class="drawer-head">
+                <span class="brand"><img src="img/logo-sm.webp" width="247" height="256" alt=""><span class="brand-word">Dhaba</span></span>
+                <button class="icon-btn" type="button" data-close aria-label="Cerrar menú"><svg class="i" aria-hidden="true"><use href="#i-close"/></svg></button>
+            </header>
+            <nav class="navsheet-links" aria-label="Móvil">
+                <a href="#especialidades" data-close style="--i:0">Especialidades</a>
+                <a href="#menu" data-close style="--i:1">Menú</a>
+                <a href="#bebidas" data-close style="--i:2">Bebidas</a>
+                <a href="#como-pedir" data-close style="--i:3">Cómo pedir</a>
+                <a href="#guia" data-close style="--i:4">Guía</a>
+                <a href="#faq" data-close style="--i:5">Preguntas</a>
+                <a href="#contacto" data-close style="--i:6">Contacto</a>
+            </nav>
+            <div class="navsheet-foot">
+                <a class="btn btn-gold btn-lg btn-block" data-wa href="https://wa.me/?text=Hola%20Dhaba%2C%20quiero%20hacer%20un%20pedido">
+                    <svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg> Pedir por WhatsApp
+                </a>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- BARRA DE PEDIDO (aparece al agregar el primer platillo) -->
+    <div class="orderbar" id="orderbar" hidden>
+        <button type="button" data-open-cart class="orderbar-btn">
+            <span class="orderbar-count" data-cart-count>0</span>
+            <span class="orderbar-label">Ver mi pedido</span>
+            <strong data-cart-total>$0</strong>
+            <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </button>
+    </div>
+
+    <!-- BOTON FLOTANTE DE WHATSAPP -->
+    <a class="wa-float" data-wa href="https://wa.me/?text=Hola%20Dhaba%2C%20quiero%20hacer%20un%20pedido" aria-label="Pedir por WhatsApp">
+        <span class="wa-tip" aria-hidden="true">¿Hacemos tu pedido?</span>
+        <span class="wa-icon">
+            <svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        </span>
+    </a>
+
+    <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
