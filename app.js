@@ -32,7 +32,7 @@ const CONFIG = {
     address: '',      // Ej: 'Calle Hidalgo 123, Centro'
     mapsUrl: '',      // Enlace de Google Maps (opcional, vuelve clicable la dirección)
     instagram: '',    // URL completa (opcional)
-    facebook: '',
+    facebook: 'https://www.facebook.com/share/1EM5peCWLc/',
     tiktok: '',
     greeting: 'Hola Dhaba, quiero hacer un pedido',
 };
